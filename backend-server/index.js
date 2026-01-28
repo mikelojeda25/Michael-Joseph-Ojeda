@@ -10,11 +10,10 @@ app.use(cors()); // Importante para hindi ma-block ng browser
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "mikelojeda25@gmail.com",
-    pass: "qbhe qgpq zbvn ekfv", // Ang App Password mo
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
 });
-
 app.post("/api/contact", async (req, res) => {
   const { name, email, subject, message } = req.body;
 
