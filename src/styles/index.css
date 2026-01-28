@@ -1,0 +1,154 @@
+@import "./fonts.css";
+@import "./tailwind.css";
+@import "./theme.css";
+
+/* Ilagay ito sa index.css */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 1. Vertical Bounce (Up & Down) */
+@keyframes slow-bounce-v {
+  0%,
+  100% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+/* 2. Horizontal Float (Left & Right) */
+@keyframes slow-bounce-h {
+  0%,
+  100% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+}
+
+/* 3. Diagonal Drift (Slanted) */
+@keyframes slow-drift {
+  0%,
+  100% {
+    transform: translate(-5px, -5px);
+  }
+  50% {
+    transform: translate(5px, 5px);
+  }
+}
+
+/* Helper Classes */
+.animate-v {
+  animation: slow-bounce-v 4s ease-in-out infinite;
+}
+.animate-h {
+  animation: slow-bounce-h 5s ease-in-out infinite;
+}
+.animate-d {
+  animation: slow-drift 6s ease-in-out infinite;
+}
+
+/* Vertical Bounce */
+@keyframes slow-bounce-v {
+  0%,
+  100% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
+
+/* Horizontal Float */
+@keyframes slow-bounce-h {
+  0%,
+  100% {
+    transform: translateX(-15px);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+}
+
+/* Diagonal Drift */
+@keyframes slow-drift {
+  0%,
+  100% {
+    transform: translate(-10px, -10px);
+  }
+  50% {
+    transform: translate(10px, 10px);
+  }
+}
+
+/* Slow Flashing (Pulse) */
+@keyframes slow-flash {
+  0%,
+  100% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Slow Spin */
+@keyframes slow-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Helper Classes */
+.animate-v {
+  animation: slow-bounce-v 5s ease-in-out infinite;
+}
+.animate-h {
+  animation: slow-bounce-h 6s ease-in-out infinite;
+}
+.animate-d {
+  animation: slow-drift 7s ease-in-out infinite;
+}
+.animate-f {
+  animation: slow-flash 4s ease-in-out infinite;
+}
+.animate-s {
+  animation: slow-spin 10s linear infinite;
+}
+
+/* Keep existing keyframes (slow-bounce-v, slow-bounce-h, etc.) */
+
+/* Custom Durations para hindi sila pare-pareho ng bilis */
+.speed-slow {
+  animation-duration: 8s;
+}
+.speed-mid {
+  animation-duration: 5s;
+}
+.speed-fast {
+  animation-duration: 3s;
+}
+.speed-spin {
+  animation-duration: 12s;
+}
