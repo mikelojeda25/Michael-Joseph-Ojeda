@@ -5,15 +5,21 @@ const cors = require("cors");
 
 const app = express();
 app.use(express.json());
-app.use(cors()); // Importante para hindi ma-block ng browser
+app.use(cors());
 
 const transporter = nodemailer.createTransport({
-  service: "gmail",
+  host: "smtp.gmail.com",
+  port: 587,
+  secure: false,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
   },
+  tls: {
+    rejectUnauthorized: false,
+  },
 });
+
 app.post("/api/contact", async (req, res) => {
   const { name, email, subject, message } = req.body;
 
