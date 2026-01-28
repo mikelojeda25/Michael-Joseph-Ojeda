@@ -7,7 +7,7 @@ import Art3 from "@/images/Vexel2.png";
 import Art4 from "@/images/coverspread.png";
 import Art5 from "@/images/Nero.png";
 import Art6 from "@/images/Vanessa.png";
-import Art7 from "@/images/Trad.png";
+import Art7 from "@/images/trad.png";
 import Art8 from "@/images/Vexel1.png";
 import Art9 from "@/images/Magna.png";
 import Art10 from "@/images/Sunset.jpg";
