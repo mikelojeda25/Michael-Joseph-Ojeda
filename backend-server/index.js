@@ -1,11 +1,22 @@
-// server/index.js
+// backend-server/index.js
 const express = require("express");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
+require("dotenv").config(); // Idagdag mo ito para mabasa ang process.env sa local
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+
+// UPDATE: Gawing mas specific ang CORS para sa security
+app.use(
+  cors({
+    origin: [
+      "https://michael-joseph-ojeda.netlify.app",
+      "http://localhost:5173",
+    ],
+    methods: ["POST"],
+  }),
+);
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -19,6 +30,9 @@ const transporter = nodemailer.createTransport({
     rejectUnauthorized: false,
   },
 });
+
+// Dagdag ka ng GET route para ma-check kung "Live" talaga ang server
+app.get("/", (req, res) => res.send("Backend is Running!"));
 
 app.post("/api/contact", async (req, res) => {
   const { name, email, subject, message } = req.body;
@@ -34,9 +48,11 @@ app.post("/api/contact", async (req, res) => {
     await transporter.sendMail(mailOptions);
     res.status(200).json({ success: true, message: "Email Sent!" });
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ success: false, error: "Failed to send email." });
+    console.error("NODEMAILER ERROR:", error); // Importante para sa Render logs
+    res.status(500).json({ success: false, error: error.message });
   }
 });
 
-app.listen(5000, () => console.log("Server is running on port 5000"));
+// UPDATE: Render uses dynamic port
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
