@@ -121,10 +121,12 @@ export function Hero() {
               transition={{ delay: 0.6 }}
               className="text-lg text-white/70 mb-8 max-w-xl leading-relaxed"
             >
-              Dedicated to learning and building better web experiences. I’m
-              looking for an opportunity to apply my creative side to real-world
-              problems, providing quality code and reliable service to a team
-              that values growth and innovation.
+              I enjoy the process of turning ideas into code. Right now, I’m
+              focused on learning as much as I can and finding a place where I
+              can be useful. I want to bring my{" "}
+              <span className="text-yellow-500 font-semibold">creativity</span>{" "}
+              to the table and provide reliable service while I keep picking up
+              new skills along the way.
             </motion.p>
 
             <motion.div
