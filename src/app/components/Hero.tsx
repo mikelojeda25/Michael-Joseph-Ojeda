@@ -106,11 +106,19 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-center md:text-left"
           >
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+              className="text-[17px] md:text-[22px] lg:text-[26px] hidden sm:block ml-6"
+            >
+              <span className="text-white/50">MICHAEL JOSEPH M. OJEDA</span>
+            </motion.h2>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-4xl md:text-5xl lg:text-7xl mb-1"
+              className="text-4xl md:text-5xl lg:text-7xl mb-1 sm:mb-4"
             >
               <span className="text-white">Joseph</span>
               <span className="text-[#D4AF37]"> Dev</span>
@@ -119,7 +127,7 @@ export function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
-              className="text-[17px] md:text-[22px] lg:text-[26px] mb-4"
+              className="text-[17px] md:text-[22px] lg:text-[26px] mb-4 sm:hidden"
             >
               <span className="text-white/50">MICHAEL JOSEPH M. OJEDA</span>
             </motion.h2>
