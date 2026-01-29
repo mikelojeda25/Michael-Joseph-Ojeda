@@ -90,6 +90,7 @@ export function About() {
                     src={section.image}
                     alt={section.title}
                     className="w-full h-[400px] object-cover"
+                    loading="lazy"
                   />
                   {/* Matching Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#022c22]/80 to-transparent"></div>

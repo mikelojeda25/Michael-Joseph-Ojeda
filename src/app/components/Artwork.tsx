@@ -75,8 +75,8 @@ export function Artwork() {
       id="artwork"
       className="min-h-screen py-20 relative bg-transparent"
     >
-      <div class="absolute bottom-0 left-0 w-full px-4">
-        <div class="max-w-7xl mx-auto h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/40 to-transparent"></div>
+      <div className="absolute bottom-0 left-0 w-full px-4">
+        <div className="max-w-7xl mx-auto h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/40 to-transparent"></div>
       </div>
 
       <div className="absolute top-0 left-0 w-full px-4">
@@ -126,6 +126,7 @@ export function Artwork() {
                 src={art.image}
                 alt={art.title}
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                loading="lazy"
               />
 
               {/* BORDER GLOW ON HOVER */}

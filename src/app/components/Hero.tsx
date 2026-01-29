@@ -61,6 +61,7 @@ export function Hero() {
                     src={Mascot}
                     alt="Michael Joseph M. Ojeda"
                     className="w-[full] h-full object-cover animate-[float_4s_ease-in-out_infinite]"
+                    loading="eager"
                   />
                 </div>
                 <div className="absolute -top-4 -right-4 w-12 h-12 bg-[#D4AF37] rounded-full blur-xl opacity-40 animate-pulse"></div>
