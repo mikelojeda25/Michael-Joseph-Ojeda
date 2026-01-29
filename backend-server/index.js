@@ -20,17 +20,15 @@ app.use(
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
-  port: 587,
-  secure: false,
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASS,
   },
-  tls: {
-    rejectUnauthorized: false,
-  },
+  connectionTimeout: 10000,
+  greetingTimeout: 10000,
 });
-
 // Dagdag ka ng GET route para ma-check kung "Live" talaga ang server
 app.get("/", (req, res) => res.send("Backend is Running!"));
 
