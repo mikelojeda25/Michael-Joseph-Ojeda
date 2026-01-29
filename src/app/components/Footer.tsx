@@ -142,7 +142,7 @@ export function Footer() {
               ],
             }}
             transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
-            className="group flex items-center gap-3 px-8 py-3 bg-white/5 border border-white/10 rounded-full"
+            className="group flex items-center gap-3 px-8 py-3 bg-white/5 border border-white rounded-full cursor-pointer"
           >
             <span className="text-white/40 text-xs font-bold uppercase tracking-widest">
               Top

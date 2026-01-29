@@ -75,7 +75,7 @@ export function TechStack() {
                 backgroundColor: "rgba(212, 175, 55, 0.1)",
                 borderColor: "rgba(212, 175, 55, 0.5)",
               }}
-              className="group w-full bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 flex flex-col items-center justify-center gap-4 transition-all duration-500 cursor-pointer"
+              className="group w-full bg-white/5 rounded-2xl p-8 border border-white/10 flex flex-col items-center justify-center gap-4 transition-all duration-500 cursor-pointer"
             >
               <div className="text-5xl group-hover:drop-shadow-[0_0_15px_rgba(212,175,55,0.5)] transition-all">
                 {tech.icon}

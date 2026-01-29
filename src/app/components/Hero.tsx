@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { ArrowRight, Mail } from "lucide-react";
 import { ImageWithFallback } from "@/app/components/imageWithFallback/ImageWithFallback";
-import Mascot from "../../images/Mascot.png";
+import Mascot from "../../images/Mascot.webp";
 
 const roles = [
   "Web Developer",
@@ -120,9 +120,10 @@ export function Hero() {
               transition={{ delay: 0.6 }}
               className="text-lg text-white/70 mb-8 max-w-xl leading-relaxed"
             >
-              Passionate about technology, creativity, and building modern web
-              solutions that make a difference. I blend technical expertise with
-              artistic vision to create exceptional digital experiences.
+              Dedicated to learning and building better web experiences. I’m
+              looking for an opportunity to apply my creative side to real-world
+              problems, providing quality code and reliable service to a team
+              that values growth and innovation.
             </motion.p>
 
             <motion.div
@@ -133,7 +134,7 @@ export function Hero() {
             >
               <button
                 onClick={() => scrollToSection("projects")}
-                className="group px-8 py-3 bg-[#D4AF37] text-[#0B2F2A] rounded-lg hover:bg-[#D4AF37]/90 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-[#D4AF37]/20"
+                className="group px-8 py-3 bg-[#D4AF37] text-[#0B2F2A] rounded-lg hover:bg-[#D4AF37]/90 transition-all duration-300 flex items-center justify-center gap-2 shadow-lg shadow-[#D4AF37]/20 cursor-pointer"
               >
                 View Projects
                 <ArrowRight
@@ -143,7 +144,7 @@ export function Hero() {
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="px-8 py-3 bg-white/10 backdrop-blur-sm text-white rounded-lg hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-2 border border-white/20"
+                className="px-8 py-3 bg-white/10 text-white rounded-lg hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-2 border border-white/20 cursor-pointer"
               >
                 <Mail size={20} />
                 Contact Me

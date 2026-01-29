@@ -91,7 +91,7 @@ export function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group bg-white/5 backdrop-blur-sm rounded-[2rem] overflow-hidden border border-white/10 transition-all duration-500 hover:border-[#D4AF37]/30"
+              className="group bg-white/5 rounded-[2rem] overflow-hidden border border-white/10 transition-all duration-500 hover:border-[#D4AF37]/30"
             >
               {/* Image Container - Fixed height, no lifting */}
               <div className="relative h-64 md:h-80 w-full overflow-hidden">
@@ -120,7 +120,7 @@ export function Projects() {
                     whileTap={{ scale: 0.9 }}
                     href={project.gitHub}
                     target="_blank"
-                    className="p-4 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-2xl shadow-xl"
+                    className="p-4 bg-white/10 md:backdrop-blur-md border border-white/20 text-white rounded-2xl shadow-xl"
                   >
                     <Github size={24} />
                   </motion.a>

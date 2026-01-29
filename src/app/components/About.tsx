@@ -25,7 +25,7 @@ const aboutSections = [
     title: "Writer",
     icon: FileText,
     description:
-      "find that I learn best when I’m explaining what I’ve just discovered. My writing is a mix of technical documentation and creative storytelling—born from a habit of taking notes to make sure I’ve truly mastered a topic. I'm all about making technical stuff feel a bit more human.",
+      "I’m a web developer who actually enjoys the documentation side of things. Coming from a background in creative writing and poetry, I try to bring a sense of clarity and flow to everything I build. For me, a project isn't finished until the code is clean and the 'story' behind it (the documentation) is easy for anyone to grasp.",
     image:
       "https://images.unsplash.com/photo-1765867967050-30db3e7a3be8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobmljYWwlMjB3cml0aW5nJTIwbm90ZWJvb2t8ZW58MXx8fHwxNzY5MjQxODg3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
     imageRight: true,

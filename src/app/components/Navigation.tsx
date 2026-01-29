@@ -39,7 +39,7 @@ export function Navigation() {
         animate={{ y: 0 }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-[#0B2F2A]/90 backdrop-blur-lg shadow-lg shadow-[#D4AF37]/10"
+            ? "bg-[#0B2F2A] shadow-lg shadow-[#D4AF37]/10"
             : "bg-transparent"
         }`}
       >
@@ -71,7 +71,7 @@ export function Navigation() {
                   <button
                     key={item.id}
                     onClick={() => scrollToSection(item.id)}
-                    className="text-white/80 hover:text-[#D4AF37] transition-colors relative group"
+                    className="text-white/80 hover:text-[#D4AF37] transition-colors relative group cursor-pointer"
                   >
                     {item.label}
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#D4AF37] group-hover:w-full transition-all duration-300"></span>
