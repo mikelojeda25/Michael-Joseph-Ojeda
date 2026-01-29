@@ -97,7 +97,7 @@ export function Hero() {
               transition={{ delay: 0.4 }}
               className="text-4xl md:text-5xl lg:text-7xl mb-4"
             >
-              <span className="text-white">Michael</span>
+              <span className="text-white">Joseph</span>
               <span className="text-[#D4AF37]"> Ojeda</span>
             </motion.h1>
 
