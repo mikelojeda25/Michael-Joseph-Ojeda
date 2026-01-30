@@ -40,7 +40,7 @@ export function TechStack() {
   return (
     <section
       id="tech-stack"
-      className="min-h-screen flex items-center justify-center py-20 relative overflow-hidden"
+      className=" flex items-center py-20 relative overflow-hidden"
     >
       <div className="absolute bottom-0 left-0 w-full px-4">
         <div className="max-w-7xl mx-auto h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/40 to-transparent"></div>

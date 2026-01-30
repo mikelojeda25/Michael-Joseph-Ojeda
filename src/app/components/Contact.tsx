@@ -29,38 +29,45 @@ export function Contact() {
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: "" });
 
+    // Email
+    const object = {
+      ...formData,
+      access_key: "522f4a40-dff6-4a75-9d04-70c49ac4d06d",
+      subject: `${formData.subject}`,
+      from_name: formData.name,
+    };
+
+    const json = JSON.stringify(object);
+
     try {
-      // NODEMAILER ENDPOINT (Palitan mo 'to kung hindi localhost:5000 ang backend mo)
-      const response = await fetch(
-        "https://michael-joseph-ojeda.onrender.com/api/contact",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-      );
+        body: json,
+      });
 
-      const data = await response.json();
+      const result = await response.json();
 
-      if (response.ok) {
+      if (result.success) {
         setSubmitStatus({
           type: "success",
-          message: "Email sent successfully via Nodemailer!",
+          message: "Message sent successfully!",
         });
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
         setSubmitStatus({
           type: "error",
-          message: data.message || "Nodemailer failed to send email.",
+          message: result.message || "Something went wrong.",
         });
       }
     } catch (error) {
-      console.error("Nodemailer Error:", error);
+      console.error("Web3Forms Error:", error);
       setSubmitStatus({
         type: "error",
-        message: "Cannot connect to the backend server. Is it running?",
+        message: "Failed to connect to the email service.",
       });
     } finally {
       setIsSubmitting(false);
@@ -92,7 +99,6 @@ export function Contact() {
           <div className="w-24 h-1 bg-[#D4AF37] mx-auto"></div>
         </motion.div>
 
-        {/* Main Grid */}
         <div className="flex flex-col md:flex-row gap-8 items-stretch">
           {/* LEFT: Contact + Availability */}
           <motion.div
