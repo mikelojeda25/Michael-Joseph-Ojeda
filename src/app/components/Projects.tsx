@@ -8,6 +8,7 @@ import image3 from "@/images/vibe-aroma.png";
 import image4 from "@/images/joseph-brew.png";
 import image5 from "@/images/lndp.png";
 import image6 from "@/images/savvy-mama.png";
+import image7 from "@/images/Amara.png";
 
 const projects = [
   {
@@ -17,6 +18,14 @@ const projects = [
     image: image1,
     link: "https://marcimetzgerrealtor.netlify.app",
     gitHub: "https://github.com/mikelojeda25/Marci-Realtor-Website",
+  },
+  {
+    title: "Amara Turns 25",
+    description:
+      "A simple yet elegant RSVP website for 'The 25th' birthday celebration. Designed for guests to seamlessly explore event details and confirm their attendance.",
+    image: image7,
+    link: "https://amaraturns25.netlify.app/",
+    gitHub: "https://github.com/mikelojeda25/Birthday-RSVP",
   },
   {
     title: "Wedding Website",
