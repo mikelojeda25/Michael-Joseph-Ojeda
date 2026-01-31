@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
-import MyCV from "@/files/Resume_Michael-Ojeda.pdf";
+import MyCV from "@/files/Resume_Ojeda_Michael-Joseph.pdf";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
