@@ -19,7 +19,9 @@ const projects = [
     link: "https://marcimetzgerrealtor.netlify.app",
     gitHub: "https://github.com/mikelojeda25/Marci-Realtor-Website",
   },
+  /*
   {
+    
     title: "Amara Turns 25",
     description:
       "A simple yet elegant RSVP website for 'The 25th' birthday celebration. Designed for guests to seamlessly explore event details and confirm their attendance.",
@@ -27,6 +29,7 @@ const projects = [
     link: "https://amaraturns25.netlify.app/",
     gitHub: "https://github.com/mikelojeda25/Birthday-RSVP",
   },
+  */
   {
     title: "Wedding Website",
     description:
