@@ -58,12 +58,11 @@ export function Navigation() {
             <div className="hidden md:flex space-x-8">
               {navItems.map((item) =>
                 item.isSpecial ? (
-                  // Kung Download CV, heto ang itsura:
                   <a
                     key={item.id}
                     href={MyCV}
                     download
-                    className="px-4 py-2 bg-[#14433D] text-white rounded-lg font-bold hover:scale-105  transition-transform"
+                    className="px-4 py-2 bg-[#14433D] text-white rounded-lg font-bold hover:scale-105  hover:bg-[#D4AF37] hover:text-black"
                   >
                     {item.label}
                   </a>

@@ -75,7 +75,6 @@ export function Projects() {
   return (
     <LazyMotion features={domAnimation}>
       {" "}
-      {/* 15KB lang imbes na 100KB+ */}
       <section
         id="projects"
         className="min-h-screen py-20 relative overflow-hidden"
@@ -84,7 +83,7 @@ export function Projects() {
           <m.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }} // Mag-load lang pag malapit na
+            viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
@@ -102,15 +101,16 @@ export function Projects() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group bg-white/5 rounded-[2rem] overflow-hidden border border-white/10"
+                className="group bg-white/5 rounded-[1rem] overflow-hidden border border-white/10"
               >
                 <div className="relative h-64 md:h-80 overflow-hidden">
                   <ImageWithFallback
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 group-hover:scale-102"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                  {/* Bigger screen */}
+                  <div className="absolute inset-0 items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity hidden lg:flex">
                     <m.a
                       href={project.link}
                       target="_blank"
@@ -129,11 +129,34 @@ export function Projects() {
                     )}
                   </div>
                 </div>
+
                 <div className="p-8">
                   <h3 className="text-2xl font-bold text-white mb-4">
                     {project.title}
                   </h3>
-                  <p className="text-white/50">{project.description}</p>
+                  <p className="text-white/50 mb-6">{project.description}</p>
+
+                  {/* Mobile view */}
+                  <div className="flex gap-3 lg:hidden">
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      className="flex items-center justify-center gap-2 w-full py-3 bg-[#D4AF37] text-black font-bold rounded-xl text-[14px]"
+                    >
+                      <ExternalLink size={20} />
+                      View Website
+                    </a>
+                    {project.gitHub && (
+                      <a
+                        href={project.gitHub}
+                        target="_blank"
+                        className="flex items-center justify-center gap-2 w-full py-3 bg-white/10 text-white font-medium rounded-xl border border-white/10 text-[15px]"
+                      >
+                        <Github size={20} />
+                        GitHub Link
+                      </a>
+                    )}
+                  </div>
                 </div>
               </m.div>
             ))}
