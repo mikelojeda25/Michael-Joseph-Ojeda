@@ -152,9 +152,8 @@ export function Hero() {
               transition={{ delay: 0.6 }}
               className="text-lg text-white/70 mb-8 max-w-xl leading-relaxed"
             >
-              I transform ideas into code. Focused on delivering
-              <span className="text-yellow-500 font-semibold"> creative </span>
-              and reliable solutions while continuously expanding my skill set.
+              Hey! I am a Web developer working with modern tools and
+              frameworks. Growing my skills through each project.
             </motion.p>
 
             <motion.div

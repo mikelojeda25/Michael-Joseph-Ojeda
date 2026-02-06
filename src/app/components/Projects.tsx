@@ -9,6 +9,7 @@ import image4 from "@/images/joseph-brew.png";
 import image5 from "@/images/lndp.png";
 import image6 from "@/images/savvy-mama.png";
 import image7 from "@/images/Amara.png";
+import image8 from "@/images/robin.png";
 
 const projects = [
   {
@@ -52,6 +53,14 @@ const projects = [
     image: image4,
     link: "https://josephsbrew.netlify.app",
     gitHub: "https://github.com/mikelojeda25/Josephs-Brew",
+  },
+  {
+    title: "Robin Delivery",
+    description:
+      "A premium food delivery platform that prioritizes thermal control and food quality. It is a specialized logistics service for high-end restaurants, ensuring meals arrive in their intended state.",
+    image: image8,
+    link: "https://robindelivery.netlify.app",
+    gitHub: "https://github.com/mikelojeda25/Robin-Delivery",
   },
   {
     title: "LNDP - Portal",
