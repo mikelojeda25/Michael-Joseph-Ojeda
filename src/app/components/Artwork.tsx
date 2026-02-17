@@ -121,8 +121,8 @@ export function Artwork() {
                   src={art.image}
                   alt={art.title}
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                  loading="lazy" // Eto ang pinaka-importante para sa malalaking image
-                  decoding="async" // Pinapabilis ang page rendering
+                  loading="lazy"
+                  decoding="async"
                 />
 
                 <div className="absolute inset-0 border-2 border-transparent group-hover:border-[#D4AF37]/20 rounded-2xl transition-colors duration-300 z-30 pointer-events-none"></div>
