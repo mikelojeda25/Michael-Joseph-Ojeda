@@ -73,7 +73,10 @@ export function TechStack() {
               transition={{ duration: 0.4, delay: index * 0.05 }}
               className="group w-full bg-white/5 rounded-xl md:rounded-2xl p-4 md:p-8 border border-white/10 flex flex-col items-center justify-center gap-2 md:gap-4 cursor-pointer"
             >
-              <div className="text-3xl md:text-5xl transition-all duration-200 group-hover:scale-110 group-hover:drop-shadow-[0_0_15px_rgba(212,175,55,0.8)]">
+              <div
+                className="text-3xl md:text-5xl transition-all duration-200 group-hover:scale-110 group-hover:drop-shadow-[0_0_15px_rgba(212,175,55,0.8)]"
+                aria-hidden="true"
+              >
                 {tech.icon}
               </div>
               <span className="text-white/70 text-[10px] md:text-xs font-semibold tracking-tighter md:tracking-wider group-hover:text-white transition-colors duration-200 uppercase text-center leading-tight">

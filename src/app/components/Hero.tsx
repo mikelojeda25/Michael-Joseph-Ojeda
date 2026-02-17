@@ -14,7 +14,7 @@ const roles = [
 
 export function Hero() {
   const [currentRole, setCurrentRole] = useState(0);
-  const [isVisible, setIsVisible] = useState(false); // New state para sa 1.5s delay
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     // Role rotation interval
@@ -67,7 +67,6 @@ export function Hero() {
               <div className="absolute w-[105%] h-[105%] border-2 border-dashed border-[#D4AF37]/15 rounded-full animate-[spin_25s_linear_infinite_reverse] opacity-40"></div>
               <div className="absolute w-[90%] h-[90%] bg-[#D4AF37]/5 blur-[100px] rounded-full"></div>
               <div className="relative z-10 w-[280px] h-[280px] md:w-[550px] md:h-[550px]">
-                {/* Eto yung image container na may 1.5s transition delay */}
                 <div
                   className={`absolute w-full h-full scale-110 md:scale-100 transition-all duration-1000 ease-in-out ${isVisible ? "opacity-100" : "opacity-0 translate-y-4"}`}
                 >
@@ -170,13 +169,14 @@ export function Hero() {
                 <ArrowRight
                   className="group-hover:translate-x-1 transition-transform"
                   size={20}
+                  aria-hidden="true"
                 />
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
                 className="px-8 py-3 bg-white/10 text-white rounded-lg hover:bg-white/20 transition-all duration-300 flex items-center justify-center gap-2 border border-white/20 cursor-pointer"
               >
-                <Mail size={20} />
+                <Mail size={20} aria-hidden="true" />
                 Contact Me
               </button>
             </motion.div>

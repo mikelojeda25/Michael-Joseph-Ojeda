@@ -104,6 +104,7 @@ export function Footer() {
               <motion.a
                 key={social.id}
                 href={social.href}
+                aria-label={social.label}
                 target={
                   social.id === "github" || social.id === "linkedin"
                     ? "_blank"
@@ -123,9 +124,10 @@ export function Footer() {
                   backgroundColor: "rgba(212, 175, 55, 0.1)",
                 }}
                 className="p-4 bg-white/5 border border-white/10 rounded-2xl text-white/40 transition-all shadow-lg flex items-center justify-center"
+                aria-label={social.label}
                 title={social.label}
               >
-                <social.Icon size={24} />
+                <social.Icon size={24} aria-hidden="true" />
               </motion.a>
             ))}
           </div>

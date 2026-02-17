@@ -123,17 +123,27 @@ export function Projects() {
                     <m.a
                       href={project.link}
                       target="_blank"
+                      aria-label={`View ${project.title} website`}
                       className="p-4 bg-[#D4AF37] rounded-2xl"
                     >
-                      <ExternalLink size={24} className="text-black" />
+                      <ExternalLink
+                        size={24}
+                        className="text-black"
+                        aria-hidden="true"
+                      />
                     </m.a>
                     {project.gitHub && (
                       <m.a
                         href={project.gitHub}
                         target="_blank"
+                        aria-label={`View ${project.title} GitHub repository`}
                         className="p-4 bg-white/60 rounded-2xl"
                       >
-                        <Github size={24} className="text-white" />
+                        <Github
+                          size={24}
+                          className="text-white"
+                          aria-hidden="true"
+                        />
                       </m.a>
                     )}
                   </div>
