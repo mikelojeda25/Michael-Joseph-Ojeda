@@ -1,16 +1,16 @@
 import { m, LazyMotion, domAnimation } from "framer-motion"; // 'm' for smaller bundle
 import { ImageWithFallback } from "@/app/components/imageWithFallback/ImageWithFallback";
 import ArrowUpRight from "lucide-react/dist/esm/icons/arrow-up-right"; // Direct import
-import Art1 from "@/images/Valorant.jpg";
-import Art2 from "@/images/Logo.png";
-import Art3 from "@/images/moon.png";
-import Art4 from "@/images/coverspread.png";
-import Art5 from "@/images/Nero.png";
-import Art6 from "@/images/Vanessa.png";
-import Art7 from "@/images/Vex.png";
-import Art8 from "@/images/Vexel1.png";
-import Art9 from "@/images/Magna.png";
-import Art10 from "@/images/Sunset.jpg";
+import Art1 from "@/images/Valorant.webp";
+import Art2 from "@/images/Logo.webp";
+import Art3 from "@/images/moon.webp";
+import Art4 from "@/images/coverspread.webp";
+import Art5 from "@/images/Nero.webp";
+import Art6 from "@/images/Vanessa.webp";
+import Art7 from "@/images/Vexel2.webp";
+import Art8 from "@/images/Vexel1.webp";
+import Art9 from "@/images/Magna.webp";
+import Art10 from "@/images/Sunset.webp";
 
 const artworkList = [
   {

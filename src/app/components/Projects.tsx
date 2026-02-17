@@ -2,14 +2,14 @@ import { m, LazyMotion, domAnimation } from "framer-motion"; // 'm' imbes na 'mo
 import ExternalLink from "lucide-react/dist/esm/icons/external-link";
 import Github from "lucide-react/dist/esm/icons/github";
 import { ImageWithFallback } from "@/app/components/imageWithFallback/ImageWithFallback";
-import image1 from "@/images/marci-website.png";
-import image2 from "@/images/wedding-site.png";
-import image3 from "@/images/vibe-aroma.png";
-import image4 from "@/images/joseph-brew.png";
-import image5 from "@/images/lndp.png";
-import image6 from "@/images/savvy-mama.png";
-import image7 from "@/images/Amara.png";
-import image8 from "@/images/robin.png";
+import image1 from "@/images/marci-website.webp";
+import image2 from "@/images/wedding-site.webp";
+import image3 from "@/images/vibe-aroma.webp";
+import image4 from "@/images/joseph-brew.webp";
+import image5 from "@/images/lndp.webp";
+import image6 from "@/images/savvy-mama.webp";
+import image7 from "@/images/Amara.webp";
+import image8 from "@/images/robin.webp";
 
 const projects = [
   {
