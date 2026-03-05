@@ -130,6 +130,7 @@ export function Projects() {
                         size={24}
                         className="text-black"
                         aria-hidden="true"
+                        rel="noopener"
                       />
                     </m.a>
                     {project.gitHub && (
@@ -143,6 +144,7 @@ export function Projects() {
                           size={24}
                           className="text-white"
                           aria-hidden="true"
+                          rel="noopener"
                         />
                       </m.a>
                     )}
