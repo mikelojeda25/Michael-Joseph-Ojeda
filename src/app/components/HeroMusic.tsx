@@ -57,9 +57,9 @@ export const HeroMusic = () => {
         {selectedAlbum && (
           <button
             onClick={handleBack}
-            className="flex items-center gap-2 text-white/50 hover:text-yellow-500 transition-all uppercase tracking-widest text-xs font-bold border-b border-white/10 hover:border-yellow-500 pb-1"
+            className="flex items-center gap-2 text-white/50 hover:text-yellow-500 transition-all uppercase tracking-widest text-xs font-bold border-b border-white/10 hover:border-yellow-500 pb-1 cursor-pointer"
           >
-            <ChevronLeft size={14} /> Back to Albums
+            <ChevronLeft size={14} /> Back
           </button>
         )}
       </motion.div>
@@ -70,24 +70,17 @@ export const HeroMusic = () => {
         transition={{ delay: 0.3 }}
         className="text-gray-400 max-w-4xl mx-auto mb-16 leading-relaxed text-center text-sm md:text-base"
       >
-        Every track within this archival collection is an exercise in{" "}
-        <span className="text-white font-medium">creative direction</span> and{" "}
+        A showcase of{" "}
+        <span className="text-white font-medium">human-AI synergy</span> in
+        music production. Each track is developed through{" "}
         <span className="text-yellow-500 font-semibold italic">
-          original songwriting
-        </span>
-        . By synthesizing the generative capabilities of{" "}
-        <span className="text-white font-medium">Suno AI</span> with a
-        meticulous post-production workflow—utilizing{" "}
-        <span className="text-white font-medium">CapCut</span> for dynamic
-        auditory sequencing and{" "}
-        <span className="text-white font-medium">TagMP3</span> for precise
-        metadata architecture—I facilitate a seamless convergence between raw
-        lyrical concepts and high-fidelity, studio-grade compositions. This
-        project serves as a testament to the{" "}
-        <span className="text-yellow-500 font-semibold">
-          synergy of human creativity and artificial intelligence
+          original lyrics
         </span>{" "}
-        in modern digital artistry.
+        and a technical workflow involving{" "}
+        <span className="text-white font-medium">Suno AI</span>,{" "}
+        <span className="text-white font-medium">CapCut</span> for sequencing,
+        and <span className="text-white font-medium">TagMP3</span> for metadata
+        architecture.
       </motion.p>
 
       <AnimatePresence mode="wait">
@@ -125,7 +118,7 @@ export const HeroMusic = () => {
                   {album.name}
                 </h3>
                 <p className="text-gray-500 text-xs tracking-widest uppercase mt-1">
-                  {album.tracks.length} Masterpieces
+                  {album.tracks.length} Songs
                 </p>
               </motion.div>
             ))}

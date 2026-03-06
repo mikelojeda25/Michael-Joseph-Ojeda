@@ -43,7 +43,7 @@ export const Albums: Album[] = [
     artist: "Yozef",
     year: "2026",
     coverUrl:
-      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772475387/unnamed_20_bluq59.jpg",
+      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled245_20260306122907_wffpjv.png",
     tracks: [
       {
         id: "sw-1",
@@ -112,7 +112,7 @@ export const Albums: Album[] = [
         audioUrl:
           "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772553889/Strawberry_Macchiato_zaw5v9.mp3",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772475387/unnamed_20_bluq59.jpg",
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled245_20260306122907_wffpjv.png",
         lyrics: strawberryMacchiatoLyrics,
       },
       {
@@ -122,7 +122,7 @@ export const Albums: Album[] = [
         audioUrl:
           "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772553888/I_ll_Remind_You_ledirz.mp3",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772475387/unnamed_20_bluq59.jpg",
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled245_20260306122907_wffpjv.png",
         lyrics: iryLyrics,
       },
       {
@@ -132,7 +132,7 @@ export const Albums: Album[] = [
         audioUrl:
           "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772554787/A_Promise_We_Couldn_t_Keep_gtslxu.mp3",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772475387/unnamed_20_bluq59.jpg",
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled245_20260306122907_wffpjv.png",
         lyrics: apwckLyrics,
       },
     ],
@@ -143,7 +143,7 @@ export const Albums: Album[] = [
     artist: "Yozef",
     year: "2026",
     coverUrl:
-      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772475387/Gemini_Generated_Image_6jsjzw6jsjzw6jsj_pjv9gd.png",
+      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled243_20260306112258_pmpagj.png",
     tracks: [
       {
         id: "t-1",
@@ -152,7 +152,7 @@ export const Albums: Album[] = [
         audioUrl:
           "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772555095/Alipin_rodpi9.mp3",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772475387/Gemini_Generated_Image_6jsjzw6jsjzw6jsj_pjv9gd.png",
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled243_20260306112258_pmpagj.png",
         lyrics: alipinLyrics,
       },
       {
@@ -162,7 +162,7 @@ export const Albums: Album[] = [
         audioUrl:
           "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772555092/Tanikala_e1bj5g.mp3",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772475387/Gemini_Generated_Image_6jsjzw6jsjzw6jsj_pjv9gd.png",
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled243_20260306112258_pmpagj.png",
         lyrics: tanikalaLyrics,
       },
       {
@@ -172,7 +172,7 @@ export const Albums: Album[] = [
         audioUrl:
           "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772713516/Bertud_kf3zsm.mp3",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772475387/Gemini_Generated_Image_6jsjzw6jsjzw6jsj_pjv9gd.png",
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled243_20260306112258_pmpagj.png",
         lyrics: bertudLyrics,
       },
     ],
@@ -183,7 +183,7 @@ export const Albums: Album[] = [
     artist: "Yozef",
     year: "2026",
     coverUrl:
-      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772555904/Heaven_Paranoia_dq9i2z.png",
+      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
     tracks: [
       {
         id: "hp-1",
@@ -192,7 +192,7 @@ export const Albums: Album[] = [
         audioUrl:
           "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772556025/Barely_Alive_mxiylb.mp3",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772555904/Heaven_Paranoia_dq9i2z.png",
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
         lyrics: barelyAliveLyrics,
       },
     ],

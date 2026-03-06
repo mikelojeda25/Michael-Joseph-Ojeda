@@ -15,7 +15,7 @@ export const MusicInfo = ({ isOpen, onClose }: MusicInfoProps) => {
       {/* Close Button - Responsive Position */}
       <button
         onClick={onClose}
-        className="hidden md:fixed right-0 md:top-10 md:right-10 z-[110] text-white/30 hover:text-white transition-colors p-2"
+        className="fixed right-0 md:top-10 md:right-10 z-[110] text-white/30 hover:text-white transition-colors p-2"
       >
         <span className="text-2xl md:text-3xl font-light">✕</span>
       </button>
