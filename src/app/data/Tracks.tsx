@@ -156,7 +156,7 @@ export const Albums: Album[] = [
         lyrics: alipinLyrics,
       },
       {
-        id: "t-2",
+        id: "t-0.2",
         title: "Tanikala",
         artist: "Yozef",
         audioUrl:
