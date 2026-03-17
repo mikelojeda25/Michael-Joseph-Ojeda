@@ -167,7 +167,7 @@ export const Albums: Album[] = [
       },
       {
         id: "t-3",
-        title: "Bertud",
+        title: "Bertud 2",
         artist: "Yozef",
         audioUrl:
           "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772713516/Bertud_kf3zsm.mp3",
