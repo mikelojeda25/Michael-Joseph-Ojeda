@@ -21,7 +21,7 @@ Then I close my eyes and feel the
 Warmth of your lips
 And it’s all just a dream
 
-Bridge
+Verse 2
 Oh I don’t wanna wake up
 Let me dream for a while
 Living this moment

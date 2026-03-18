@@ -1,4 +1,7 @@
 // src/app/data/Tracks.ts
+import { imminealoneLyrics } from "./Lyrics/imminealone";
+import { shadeLyrics } from "./Lyrics/shade";
+
 import { hollowWorldLyrics } from "./Lyrics/hollow-world";
 import { parallelLinesLyrics } from "./Lyrics/parallel-lines";
 import { sweetLullabyLyrics } from "./Lyrics/sweet-lullaby";
@@ -14,6 +17,8 @@ import { alipinLyrics } from "./Lyrics/alipin";
 import { bertudLyrics } from "./Lyrics/bertud";
 
 import { barelyAliveLyrics } from "./Lyrics/barely-alive";
+import { pocketMoneyLyrics } from "./Lyrics/pocket-money";
+import { dontThinkItLyrics } from "./Lyrics/dont-think-it";
 
 import { alapaapLyrics } from "./Lyrics/alapaap";
 import { kinalimutangKahaponLyrics } from "./Lyrics/kinalimutang-kahapon";
@@ -37,6 +42,38 @@ export interface Album {
 }
 
 export const Albums: Album[] = [
+  //Can and Will Album
+  {
+    id: "can and will",
+    name: "Can and Will",
+    artist: "Yozef",
+    year: "2026",
+    coverUrl:
+      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773843352/Untitled253_20260318221436_hkv3he.png",
+    tracks: [
+      {
+        id: "cnw-1",
+        title: "I'm Mine Alone",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1773842731/I_m_mine_alone_nksjvw.wav",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773843352/Untitled253_20260318221436_hkv3he.png",
+        lyrics: imminealoneLyrics,
+      },
+      {
+        id: "cnw-2",
+        title: "Shade",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1773842693/Shade_-_Final_xp3syz.mp3",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773843352/Untitled253_20260318221436_hkv3he.png",
+        lyrics: shadeLyrics,
+      },
+    ],
+  },
+  // Surreal Waves Album
   {
     id: "surreal-waves",
     name: "Surreal Waves",
@@ -137,46 +174,49 @@ export const Albums: Album[] = [
       },
     ],
   },
+
+  // Hukom Album
   {
-    id: "tanikala",
-    name: "Tanikala",
+    id: "hukom-0",
+    name: "Hukom",
     artist: "Yozef",
     year: "2026",
     coverUrl:
-      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled243_20260306112258_pmpagj.png",
+      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773829710/Untitled249_20260318172446_fhazpt.png",
     tracks: [
       {
-        id: "t-1",
+        id: "hukom-1",
         title: "Alipin",
         artist: "Yozef",
         audioUrl:
           "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772555095/Alipin_rodpi9.mp3",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled243_20260306112258_pmpagj.png",
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773829710/Untitled249_20260318172446_fhazpt.png",
         lyrics: alipinLyrics,
       },
       {
-        id: "t-0.2",
+        id: "hukom-2",
         title: "Tanikala",
         artist: "Yozef",
         audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772555092/Tanikala_e1bj5g.mp3",
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1773844217/Tanikala_ivogyi.mp3",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled243_20260306112258_pmpagj.png",
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773829710/Untitled249_20260318172446_fhazpt.png",
         lyrics: tanikalaLyrics,
       },
       {
-        id: "t-3",
-        title: "Bertud 2",
+        id: "hukom-3",
+        title: "Bertud",
         artist: "Yozef",
         audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772713516/Bertud_kf3zsm.mp3",
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1773847887/BERTUD_20_rxxww1.wav",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled243_20260306112258_pmpagj.png",
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773829710/Untitled249_20260318172446_fhazpt.png",
         lyrics: bertudLyrics,
       },
     ],
   },
+  // Heaven Paranoia Album
   {
     id: "heaven-paranoia",
     name: "Heaven Paranoia",
@@ -190,10 +230,30 @@ export const Albums: Album[] = [
         title: "Barely Alive",
         artist: "Yozef",
         audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772556025/Barely_Alive_mxiylb.mp3",
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1773842712/Barely_Alive_rvdpqf.wav",
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
         lyrics: barelyAliveLyrics,
+      },
+      {
+        id: "hp-2",
+        title: "Don't Think It",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1773842685/Don_t_Think_It_nyzcq6.wav",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
+        lyrics: dontThinkItLyrics,
+      },
+      {
+        id: "hp-3",
+        title: "Pocket Money",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1773842699/Pocket_Money_mee4co.wav",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773849169/IMG_20260318_235127_eeevha.png",
+        lyrics: pocketMoneyLyrics,
       },
     ],
   },
@@ -203,7 +263,7 @@ export const Albums: Album[] = [
     artist: "Yozef",
     year: "2026",
     coverUrl:
-      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772475386/24fa3d13-012a-4745-904b-167bbc01510e_qoh8q9.jpg",
+      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
     tracks: [
       {
         id: "kspn-1",
@@ -212,7 +272,7 @@ export const Albums: Album[] = [
         audioUrl:
           "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772475116/Alapaap_tlumad.mp3",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772475386/24fa3d13-012a-4745-904b-167bbc01510e_qoh8q9.jpg",
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
         lyrics: alapaapLyrics,
       },
       {
@@ -222,7 +282,7 @@ export const Albums: Album[] = [
         audioUrl:
           "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772475116/Kinalimutang_Kahapon_qugf5f.mp3",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772475386/24fa3d13-012a-4745-904b-167bbc01510e_qoh8q9.jpg",
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
         lyrics: kinalimutangKahaponLyrics,
       },
     ],

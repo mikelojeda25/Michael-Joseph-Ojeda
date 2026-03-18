@@ -1,4 +1,4 @@
-export const bertudLyrics = `Verse
+export const bertudLyrics = `Verse 1
 Isa-isa tayong nagka-malay
 Sa simbolo nagmula ang ingay
 Pakinggan mo ang alingaw-ngaw
@@ -13,7 +13,7 @@ Maniwala ka lang sa
 Perpektong Bertud!
 
 Rap 1
-Tatlong daang libo ang dumaang pagsubok
+Ah! Tatlong daang libo ang dumaang pagsubok ha
 Bago pa ang koda at ang mga itinakda
 Binuo ang lipunan sinubukang maging puro
 Nagkaisang tipan busilak bawat turo
@@ -33,6 +33,7 @@ Ang buong Kabanalan ay tintado
 Ito’y nilikha upang maging makatao
 Hindi ipininta para ang isip ay isarado
 
+Chorus
 Lunukin ang lason na may kasamang galak
 Ialay ang leeg sa gintong itak
 Sambahin ang mga salita
@@ -41,12 +42,13 @@ Maniwala ka lang sa
 Perpektong Bertud!
 Perpektong Bertud!
 
-Bridge
+Pre-Bridge
 Sino ang tunay na ahas?
 Ang siya bang nag-alok ng dunong?
-O ang nagbawal ng lakas?
+O ang nagbabawal ng lakas?
 Para tayo'y ikulong?
 
+Bridge
 Maniwala ka lang sa Perpektong Bertud
 Gamitin mo siya para sila’y sumunod…
 sumunod… sumunod… sumunod… sumunod…

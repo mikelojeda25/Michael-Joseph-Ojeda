@@ -1,5 +1,4 @@
-export const alipinLyrics = `
-Verse 1
+export const alipinLyrics = `Verse 1
 Bawat galaw at kilos
 dapat ayon sa kanila
 wag mong itanong

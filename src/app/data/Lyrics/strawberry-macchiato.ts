@@ -1,53 +1,67 @@
 export const strawberryMacchiatoLyrics = `Intro
-I didn't expect to see you here
-not today
+I Didn't Expect To See You Here.
+Not Today.
 
 Verse 1
-same corner chair
-the scent of your perfume is still the same
-you had a strawberry macchiato
-I just had my cappuccino looking at the street
-when our eyes met it all rushed back
-the years apart didn't matter
-
-Pre-Chorus
-your smile was so precious
-I can't resist it at all
-I smile back and say hi
-there’s no turning back now
-
-Chorus
-strawberry macchiato
-feels like a fever dream
-you were my favorite and I still do
-my tongue always craves for you
-it’s time to bring it back
-let’s just make this real
-that’s how I feel
+Same Corner Chair.
+The Scent Of Your Perfume Is Still The Same.
+You Had A Strawberry Macchiato.
+I Just Had My Cappuccino, Looking At The Street.
+When Our Eyes Met, It All Rushed Back.
+The Years Apart Didn't Matter.
 
 Verse 2
-I texted you later that night
-just said it was good to see you
-watched the dots on the screen
-then I said I'd love to meet again
-no more guessing
-
-Bridge
-so another afternoon
-same order but mine is same as your
-those shared path we cut
-they're finally connecting again
+Your Smile Was So Precious
+I Can't Resist It At All
+I Smile Back And Say Hi
+There’s No Turning Back Now
 
 Chorus
-strawberry macchiato
-feels like a fever dream
-you were my favorite and I still do
-my tongue always craves for you
-it’s time to bring it back
-let’s just make this real
-that’s how I feel
+Strawberry Macchiato.
+Feels Like A Fever Dream
+You Were My Favorite And You Still Are
+Strawberry Macchiato
+I'm Still Craving For You
+It’s Time To Bring It Back
+Let’s Just Make This Real
+That’s How I Feel
+
+Verse 3
+Beat Continues
+I Texted You Later That Night.
+Just Said It Was Good To See You.
+Watched The Dots On The Screen.
+Then I Said I'd Love To Meet Again.
+No More Guessing.
+
+Bridge
+Quiet But Cheerful
+So, Another Afternoon.
+Same Order But Mine Is Same As Your.
+Those Shared Path We Cut
+They're Finally Connecting Again.
+
+Chorus
+Strawberry Macchiato.
+Feels Like A Fever Dream
+You Were My Favorite And You Still Are
+Strawberry Macchiato
+I'm Still Craving For You
+It’s Time To Bring It Back
+Let’s Just Make This Real
+That’s How I Feel
+
+Chorus
+Strawberry Macchiato.
+Feels Like A Fever Dream
+You Were My Favorite And You Still Are
+Strawberry Macchiato
+I'm Still Craving For You
+It’s Time To Bring It Back
+Let’s Just Make This Real.
+That’s How I Feel.
 
 Outro
-strawberry macchiato
-cappuccino for me
-see you soon`;
+Strawberry Macchiato.
+Cappuccino For Me.
+See You Soon.`;

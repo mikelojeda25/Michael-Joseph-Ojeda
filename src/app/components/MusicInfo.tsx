@@ -34,10 +34,10 @@ export const MusicInfo = ({ isOpen, onClose }: MusicInfoProps) => {
         <div className="w-full md:w-1/2 flex flex-col h-auto md:h-full max-h-none md:max-h-[620px]">
           {/* Header Section */}
           <div className="mb-8 shrink-0 text-center md:text-left">
-            <h1 className="text-3xl md:text-5xl font-black text-white tracking-tighter uppercase italic leading-tight">
+            <h1 className="text-3xl md:text-3xl font-black text-white tracking-tighter uppercase italic leading-tight">
               {currentTrack.title}
             </h1>
-            <p className="text-base md:text-lg font-bold text-yellow-500 tracking-[0.3em] uppercase mt-2 opacity-80">
+            <p className="text-base md:text-md font-bold text-yellow-500 tracking-[0.3em] uppercase mt-2 opacity-80">
               {currentTrack.artist}
             </p>
             <div className="h-[1px] w-12 bg-white/20 mt-6 mx-auto md:mx-0" />
@@ -45,7 +45,7 @@ export const MusicInfo = ({ isOpen, onClose }: MusicInfoProps) => {
 
           {/* Lyrics Area */}
           <div className="overflow-visible md:overflow-y-auto pr-0 md:pr-6 custom-scrollbar">
-            <p className="text-lg md:text-2xl font-light text-gray-400 leading-relaxed whitespace-pre-line italic text-center md:text-left">
+            <p className="text-lg md:text-md font-light text-gray-400 leading-relaxed whitespace-pre-line italic text-center md:text-left">
               {currentTrack.lyrics}
             </p>
           </div>
