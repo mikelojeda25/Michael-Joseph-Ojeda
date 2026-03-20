@@ -8,10 +8,10 @@ Pre-Chorus
 I like to look in the mirror
 Ask myself why am I here
 Then it talks back to me
-Like WTF
+"Like what the fuck?"
 
 Chorus
-Breathing and Living in Paranoia
+Living and breathing in Paranoia
 Can’t trust anybody else
 Not even the ghost in my mirror
 He’s living but barely alive
@@ -19,7 +19,7 @@ Too busy being nothing
 
 Post Chorus
 Why can’t you be somebody else
-OhoUh OhoUh
+Hou ouh Hou ouh
 
 Pre-Bridge
 Break it yeah break it
@@ -33,10 +33,10 @@ Pre-Chorus
 I like to look in the mirror
 Ask myself why am I here
 Then it talks back to me
-Like WTF
+"What are you doing here?"
 
 Chorus
-Breathing and Living in Paranoia
+Living and breathing in Paranoia
 Can’t trust anybody else
 Not even the ghost in my mirror
 He’s living but barely alive
@@ -46,10 +46,11 @@ Bridge
 I’m tired of my own promises
 I’m tired of just being a shadow
 Let me sleep for a moment No
-Get me out of this place
+
+Then I'll watch you insted
 
 Chorus
-Breathing and Living in Paranoia
+Living and breathing in Paranoia
 Can’t trust anybody else
 Not even the ghost in my mirror
 He’s living but barely alive
@@ -57,4 +58,4 @@ Too busy being nothing
 
 Post Chorus
 Why can’t you be somebody else
-Oh Ohou ouh Ohou Ohhh`;
+Oh ouh Oh ouh`;

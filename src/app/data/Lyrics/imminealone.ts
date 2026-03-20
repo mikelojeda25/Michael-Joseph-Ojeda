@@ -4,7 +4,7 @@ You're in the mirror, but ignore the fact you're completely torn
 Swore you're gonna change, feels out of reach Hear my preach
 I'm in control of your mind
 You can't deliver you are now a visitor
-No A prisoner
+No a prisoner
 
 Verse 2
 I overthink, in every sting, with this dilemma
@@ -28,17 +28,25 @@ collapsing in the shadow
 I'm in the making, I'm breathing, trying to be thorough
 
 Breaking while you're shaking, thinking that you're rough
-Just accept that you've already lost
+
 
 Verse 4
-Because you are soft
+Just accept that you've already lost
+Because you are "Soft"
+
 Water is soft 'til it breaks the dam
-Stupid Even the wisest started as a fool
-Weak Tell that to the wind 'til it turns to a hurricane
-Rejected You can't kick me out, I already left
-Failure I refine myself with every fall
-Invisible Exactly That's my power
-Worthless They can't price what they can't own
+
+"Stupid" Even the wisest started as a fool
+
+"Weak" Tell that to the wind 'til it turns to a hurricane
+
+"Rejected" You can't kick me out, I already left
+
+"Failure" I refine myself with every fall
+
+"Invisible" Exactly That's my power
+
+"Worthless" They can't price what they can't own
 
 You are always failing And I learn to carry the weight
 You are just a human I am a human who decides what that means
@@ -67,6 +75,7 @@ I might doubt again yet I'll know the game
 I might fall again I will learn to change
 Not flood, not rain, not a hurricane
 But a human I can shape
+
 Yes, I'm insane but not in chains
 I'll engage obtain my lane
 Maintain, stay sane through every pain

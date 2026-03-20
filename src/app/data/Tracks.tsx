@@ -1,4 +1,6 @@
 // src/app/data/Tracks.ts
+import { interludeLyrics } from "./Lyrics/interlude";
+
 import { imminealoneLyrics } from "./Lyrics/imminealone";
 import { shadeLyrics } from "./Lyrics/shade";
 
@@ -17,8 +19,11 @@ import { alipinLyrics } from "./Lyrics/alipin";
 import { bertudLyrics } from "./Lyrics/bertud";
 
 import { barelyAliveLyrics } from "./Lyrics/barely-alive";
+import { driftAwayLyrics } from "./Lyrics/drift-away";
 import { pocketMoneyLyrics } from "./Lyrics/pocket-money";
 import { dontThinkItLyrics } from "./Lyrics/dont-think-it";
+import { myHelpLyrics } from "./Lyrics/my-help";
+import { silenceRemembersMeLyrics } from "./Lyrics/silence-remembers-me";
 
 import { alapaapLyrics } from "./Lyrics/alapaap";
 import { kinalimutangKahaponLyrics } from "./Lyrics/kinalimutang-kahapon";
@@ -226,6 +231,16 @@ export const Albums: Album[] = [
       "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
     tracks: [
       {
+        id: "hp-1423",
+        title: "Drift Away",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774014264/Drift_Away_tgynfi.mp3",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
+        lyrics: driftAwayLyrics,
+      },
+      {
         id: "hp-1",
         title: "Barely Alive",
         artist: "Yozef",
@@ -246,7 +261,17 @@ export const Albums: Album[] = [
         lyrics: dontThinkItLyrics,
       },
       {
-        id: "hp-3",
+        id: "hp-7",
+        title: "Fragile - Interlude",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774020430/Fragile_-_Interlude_xyahnj.wav",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
+        lyrics: interludeLyrics,
+      },
+      {
+        id: "hp-1243",
         title: "Pocket Money",
         artist: "Yozef",
         audioUrl:
@@ -254,6 +279,36 @@ export const Albums: Album[] = [
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773849169/IMG_20260318_235127_eeevha.png",
         lyrics: pocketMoneyLyrics,
+      },
+      {
+        id: "hp-1223",
+        title: "Need Something",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774013117/Call_Me_q3mek1.mp3",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
+        lyrics: myHelpLyrics,
+      },
+      {
+        id: "hp-8",
+        title: "Echoes - Interlude",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774020430/Silent_Echoes_-_Interlude_zsi3dy.wav",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
+        lyrics: interludeLyrics,
+      },
+      {
+        id: "hp-9",
+        title: "Silence Remembers Me",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774021236/Silence_Remembers_Me_s3fks1.mp3",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
+        lyrics: silenceRemembersMeLyrics,
       },
     ],
   },
