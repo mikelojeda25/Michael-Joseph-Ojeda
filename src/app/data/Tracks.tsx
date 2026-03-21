@@ -24,6 +24,7 @@ import { pocketMoneyLyrics } from "./Lyrics/pocket-money";
 import { dontThinkItLyrics } from "./Lyrics/dont-think-it";
 import { myHelpLyrics } from "./Lyrics/my-help";
 import { silenceRemembersMeLyrics } from "./Lyrics/silence-remembers-me";
+import { powerTrippingLyrics } from "./Lyrics/power-tripping";
 
 import { alapaapLyrics } from "./Lyrics/alapaap";
 import { kinalimutangKahaponLyrics } from "./Lyrics/kinalimutang-kahapon";
@@ -241,6 +242,16 @@ export const Albums: Album[] = [
         lyrics: driftAwayLyrics,
       },
       {
+        id: "hp-110",
+        title: "Power Tripping",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774096741/Power_Tripping_bodjjk.wav",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
+        lyrics: powerTrippingLyrics,
+      },
+      {
         id: "hp-1",
         title: "Barely Alive",
         artist: "Yozef",
@@ -249,16 +260,6 @@ export const Albums: Album[] = [
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
         lyrics: barelyAliveLyrics,
-      },
-      {
-        id: "hp-2",
-        title: "Don't Think It",
-        artist: "Yozef",
-        audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1773842685/Don_t_Think_It_nyzcq6.wav",
-        coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
-        lyrics: dontThinkItLyrics,
       },
       {
         id: "hp-7",
@@ -271,14 +272,14 @@ export const Albums: Album[] = [
         lyrics: interludeLyrics,
       },
       {
-        id: "hp-1243",
-        title: "Pocket Money",
+        id: "hp-2",
+        title: "Don't Think It",
         artist: "Yozef",
         audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1773842699/Pocket_Money_mee4co.wav",
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1773842685/Don_t_Think_It_nyzcq6.wav",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773849169/IMG_20260318_235127_eeevha.png",
-        lyrics: pocketMoneyLyrics,
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
+        lyrics: dontThinkItLyrics,
       },
       {
         id: "hp-1223",
@@ -289,6 +290,16 @@ export const Albums: Album[] = [
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
         lyrics: myHelpLyrics,
+      },
+      {
+        id: "hp-1243",
+        title: "Pocket Money",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1773842699/Pocket_Money_mee4co.wav",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773849169/IMG_20260318_235127_eeevha.png",
+        lyrics: pocketMoneyLyrics,
       },
       {
         id: "hp-8",
