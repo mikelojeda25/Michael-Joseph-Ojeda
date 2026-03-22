@@ -13,7 +13,7 @@ Chorus
 "Don’t think it" but I know it's all true
 It’s not in my head, it’s all in the air
 Why trade my breath just for this name?
-WoOoOoh
+Wo-ah
 I hate the lies I breathe
 
 Verse 2
@@ -27,12 +27,12 @@ Chorus
 "Don’t think it" but I know it's all true
 It’s not in my head, it’s all in the air
 Why trade my breath just for this name?
-WoOoOoh
+Wo-ah
 I hate the lies I breathe.
 
 Verse 3
 They named me what they feared to be
-They spill the poison and they sip it all in
+They spill the poison, and they sip it all in
 Soaking in lies they're still believing
 
 I'll make them own these names
@@ -50,7 +50,7 @@ Chorus
 "Don’t think it" but I know it's all true.
 It’s not in my head, it’s all in the air
 Why trade my breath just for this name?
-WoOoOoh
+Wo-ah
 I hate the lies I breathe.
 
 Outro

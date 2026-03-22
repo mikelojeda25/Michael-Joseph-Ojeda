@@ -55,7 +55,7 @@ export const Albums: Album[] = [
     artist: "Yozef",
     year: "2026",
     coverUrl:
-      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773843352/Untitled253_20260318221436_hkv3he.png",
+      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1774190999/Untitled253_20260322222538_fuji0a.png",
     tracks: [
       {
         id: "cnw-1",
@@ -64,7 +64,7 @@ export const Albums: Album[] = [
         audioUrl:
           "https://res.cloudinary.com/dd5gbzoti/video/upload/v1773842731/I_m_mine_alone_nksjvw.wav",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773843352/Untitled253_20260318221436_hkv3he.png",
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1774190999/Untitled253_20260322222538_fuji0a.png",
         lyrics: imminealoneLyrics,
       },
       {
@@ -74,7 +74,7 @@ export const Albums: Album[] = [
         audioUrl:
           "https://res.cloudinary.com/dd5gbzoti/video/upload/v1773842693/Shade_-_Final_xp3syz.mp3",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773843352/Untitled253_20260318221436_hkv3he.png",
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1774190999/Untitled253_20260322222538_fuji0a.png",
         lyrics: shadeLyrics,
       },
     ],
@@ -316,7 +316,7 @@ export const Albums: Album[] = [
         title: "Silence Remembers Me",
         artist: "Yozef",
         audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774021236/Silence_Remembers_Me_s3fks1.mp3",
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774174577/Silence_Remembers_Me_cs11vs.wav",
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
         lyrics: silenceRemembersMeLyrics,
