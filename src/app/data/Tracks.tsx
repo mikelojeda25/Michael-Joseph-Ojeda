@@ -29,6 +29,9 @@ import { powerTrippingLyrics } from "./Lyrics/power-tripping";
 import { alapaapLyrics } from "./Lyrics/alapaap";
 import { kinalimutangKahaponLyrics } from "./Lyrics/kinalimutang-kahapon";
 
+import { allIveGotLyrics } from "./Lyrics/all-ive-got";
+import { savingYourSeatLyrics } from "./Lyrics/saving-your-seat";
+
 export interface Track {
   id: string;
   title: string;
@@ -350,6 +353,36 @@ export const Albums: Album[] = [
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
         lyrics: kinalimutangKahaponLyrics,
+      },
+    ],
+  },
+  {
+    id: "dented lens",
+    name: "Dented Lens",
+    artist: "Yozef",
+    year: "2026",
+    coverUrl:
+      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1774264325/Untitled256_20260323191054_tojq8n.png",
+    tracks: [
+      {
+        id: "lens-1",
+        title: "All I've Got",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774265809/All_I_ve_Got_-_Final_yxrdx1.wav",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1774264325/Untitled256_20260323191054_tojq8n.png",
+        lyrics: allIveGotLyrics,
+      },
+      {
+        id: "lens-2",
+        title: "Saving Your Seat",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774285131/The_sun_is_hitting_the_side_of_my_room_pjkbqq.mp3",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1774264325/Untitled256_20260323191054_tojq8n.png",
+        lyrics: savingYourSeatLyrics,
       },
     ],
   },
