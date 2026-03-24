@@ -261,7 +261,7 @@ export const Albums: Album[] = [
         title: "Power Tripping",
         artist: "Yozef",
         audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774096741/Power_Tripping_bodjjk.wav",
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774251867/Power_Trip_Marionette_dnfh7x.wav",
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
         lyrics: powerTrippingLyrics,

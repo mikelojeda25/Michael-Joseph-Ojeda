@@ -48,7 +48,7 @@ Ikaw ang binibining aking pinipili
 Sa piling ko ang walang hanggan
 Sayo lang makikinig, aking iniibig
 Sa piling mo ako’y kontento
-Puso’y sa'yo, habang buhay
+Aking puso’y sa'yo, habang buhay
 
 Post Chorus
 Ikaw ang uuwian kahit saan ako mapunta
