@@ -15,7 +15,7 @@ Just...once...more...
 Chorus
 Still saving your seat every dinner
 Brewing a pot of bitter tea you liked
-Staring at your plateWith the food 
+Staring at your plate, with the food 
 You always loved - going cold
 Did I forget… that you’re gone
 
@@ -30,6 +30,8 @@ May angels wipe away your tears…
 Carry your soul above the clouds…
 Where... no pain lingers... Oh..
 
+Oh oh...
+
 Chorus
 Still saving your seat every dinner
 But the tea is cold, and the plate collects dust
@@ -40,8 +42,10 @@ Verse 3
 It’s time... to let go
 I ate dinner alone tonight
 I washed your cup
+
 Oh,find your peace
-Find your peace… Find your peace
+Find your peace… 
+Find your peace…
 
 Outro 
 I'll find my peace`;

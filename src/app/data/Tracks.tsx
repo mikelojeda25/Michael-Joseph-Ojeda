@@ -28,6 +28,7 @@ import { powerTrippingLyrics } from "./Lyrics/power-tripping";
 
 import { alapaapLyrics } from "./Lyrics/alapaap";
 import { kinalimutangKahaponLyrics } from "./Lyrics/kinalimutang-kahapon";
+import { kontentoLyrics } from "./Lyrics/kontento";
 
 import { allIveGotLyrics } from "./Lyrics/all-ive-got";
 import { savingYourSeatLyrics } from "./Lyrics/saving-your-seat";
@@ -92,24 +93,14 @@ export const Albums: Album[] = [
       "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled245_20260306122907_wffpjv.png",
     tracks: [
       {
-        id: "sw-1",
-        title: "Hollow World",
+        id: "sw-7",
+        title: "Strawberry Macchiato",
         artist: "Yozef",
         audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772475349/Hollow_World_wemfdv.mp3",
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772553889/Strawberry_Macchiato_zaw5v9.mp3",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772482746/Untitled240_20260303041733_ozeylg.png",
-        lyrics: hollowWorldLyrics,
-      },
-      {
-        id: "sw-2",
-        title: "Parallel Lines",
-        artist: "Yozef",
-        audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772475353/Parallel_Lines_tjj4il.mp3",
-        coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772483926/Untitled241_20260303043753_gqowf6.png",
-        lyrics: parallelLinesLyrics,
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled245_20260306122907_wffpjv.png",
+        lyrics: strawberryMacchiatoLyrics,
       },
       {
         id: "sw-3",
@@ -122,6 +113,16 @@ export const Albums: Album[] = [
         lyrics: sweetLullabyLyrics,
       },
       {
+        id: "sw-5",
+        title: "Breathe Slowly",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772475352/Breathe_Slowly_lpeqid.mp3",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772550551/Untitled242_20260303230413_ugju2w.png",
+        lyrics: breatheSlowlyLyrics,
+      },
+      {
         id: "sw-4",
         title: "I'll Make Myself Enough",
         artist: "Yozef",
@@ -132,14 +133,35 @@ export const Albums: Album[] = [
         lyrics: immseLyrics,
       },
       {
-        id: "sw-5",
-        title: "Breathe Slowly",
+        id: "sw-0",
+        title: "Seraphim Stare - Interlude",
         artist: "Yozef",
         audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772475352/Breathe_Slowly_lpeqid.mp3",
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774353068/Seraphim_Stare_-_Interlude_qbn0wy.wav",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772550551/Untitled242_20260303230413_ugju2w.png",
-        lyrics: breatheSlowlyLyrics,
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled245_20260306122907_wffpjv.png",
+        lyrics: interludeLyrics,
+      },
+
+      {
+        id: "sw-2",
+        title: "Parallel Lines",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772475353/Parallel_Lines_tjj4il.mp3",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772483926/Untitled241_20260303043753_gqowf6.png",
+        lyrics: parallelLinesLyrics,
+      },
+      {
+        id: "sw-9",
+        title: "A Promise We Couldn't Keep",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774352053/A_Promise_We_Couldn_t_Keep_eg27d9.wav",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled245_20260306122907_wffpjv.png",
+        lyrics: apwckLyrics,
       },
       {
         id: "sw-6",
@@ -152,34 +174,24 @@ export const Albums: Album[] = [
         lyrics: theHellIAmLyrics,
       },
       {
-        id: "sw-7",
-        title: "Strawberry Macchiato",
+        id: "sw-1",
+        title: "Hollow World",
         artist: "Yozef",
         audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772553889/Strawberry_Macchiato_zaw5v9.mp3",
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772475349/Hollow_World_wemfdv.mp3",
         coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled245_20260306122907_wffpjv.png",
-        lyrics: strawberryMacchiatoLyrics,
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772482746/Untitled240_20260303041733_ozeylg.png",
+        lyrics: hollowWorldLyrics,
       },
       {
         id: "sw-8",
         title: "Remind You",
         artist: "Yozef",
         audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772553888/I_ll_Remind_You_ledirz.mp3",
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774355469/Remind_You_tjcyip.mp3",
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled245_20260306122907_wffpjv.png",
         lyrics: iryLyrics,
-      },
-      {
-        id: "sw-9",
-        title: "A Promise We Couldn't Keep",
-        artist: "Yozef",
-        audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1772554787/A_Promise_We_Couldn_t_Keep_gtslxu.mp3",
-        coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772864/Untitled245_20260306122907_wffpjv.png",
-        lyrics: apwckLyrics,
       },
     ],
   },
@@ -353,6 +365,16 @@ export const Albums: Album[] = [
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
         lyrics: kinalimutangKahaponLyrics,
+      },
+      {
+        id: "kspn-3",
+        title: "Kontento",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774340611/Kontento_bikx59.wav",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
+        lyrics: kontentoLyrics,
       },
     ],
   },

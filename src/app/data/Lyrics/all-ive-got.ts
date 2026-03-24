@@ -11,11 +11,10 @@ If this is the love you want
 I’ll chain it around my neck
 
 Chorus 1
-I
-I’ll do the time just name the crime
+I, I’ll do the time just name the crime
 I’ll bury every truth behind my eyes
 Even the ones I swore I'd keep
-Own this We share this mess
+Own this! We share this mess
 
 Post-Chorus
 Hold me like I am all you’ve got
@@ -36,7 +35,7 @@ Chorus 2
 I’ll do the time just name the crime
 I’ll bury every truth behind my eyes
 Even the ones I swore I'd keep
-Own this We share this mess
+Own this! We share this mess
 
 Post-Chorus
 Hold me like I am all you’ve got
@@ -52,12 +51,11 @@ Chorus 3
 I’ll do the time just name the crime
 I’ll bury every truth in your lies
 Even the ones I made up for you
-Own this I am the mess you made
+Own this! I am the mess you made
 
 Post Chorus
-Hold me like I am
-Hold me like
-I AM
+Hold me like I am...
+Hold me like I AM!
 All you've got
 
 Outro
