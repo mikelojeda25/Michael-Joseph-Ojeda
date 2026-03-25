@@ -1,16 +1,13 @@
 import { useMemo, useState } from "react";
 import { Albums } from "../data/Tracks";
 import { usePlayerStore } from "../store/usePlayerStore";
-import { ChevronLeft, Search } from "lucide-react";
+import { ChevronLeft, Search, LayoutGrid, List } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useSearchParams } from "react-router-dom";
 
 export const HeroMusic = () => {
-  // Logic para sa URL-based navigation
   const [searchParams, setSearchParams] = useSearchParams();
   const albumIdFromUrl = searchParams.get("album");
-
-  // Selected album is derived from URL or local state fallback
   const selectedAlbum = Albums.find((a) => a.id === albumIdFromUrl) || null;
 
   const { setTrack, currentTrack, isPlaying, togglePlay } = usePlayerStore();
@@ -146,20 +143,19 @@ export const HeroMusic = () => {
     );
   }, [selectedAlbum, query]);
 
-  // Animation Variants para sa Container
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { staggerChildren: 0.1 },
-    },
+    visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
   };
 
-  // Animation Variants para sa Individual Items
   const itemVariants = {
     hidden: { y: 20, opacity: 0 },
     visible: { y: 0, opacity: 1 },
   };
+
+  // REUSABLE CLASS FOR SELECTS TO FIX THE WHITE TEXT ISSUE
+  const selectClass =
+    "rounded-xl  text-white border border-white/15 px-3 py-2 text-xs font-bold tracking-widest uppercase focus:outline-none focus:ring-2 focus:ring-yellow-500/40 cursor-pointer hover:bg-zinc-800 transition-colors";
 
   return (
     <section className="py-20 px-6 max-w-7xl mx-auto mb-20 overflow-hidden">
@@ -168,10 +164,39 @@ export const HeroMusic = () => {
         animate={{ opacity: 1, x: 0 }}
         className="mb-10 grid grid-cols-1 lg:grid-cols-[1fr_minmax(340px,520px)] gap-6 items-start relative"
       >
-        <div className="flex items-end justify-between gap-4">
+        <div className=" items-end justify-between gap-4">
           <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-none">
             {selectedAlbum ? selectedAlbum.name : "Sonic Archives"}
           </h2>
+          <p className="text-yellow-500 font-bold tracking-[0.4em] uppercase text-xs md:text-sm mb-6">
+            {selectedAlbum ? `Released ${selectedAlbum.year}` : "Discography"}
+          </p>
+          <div className="flex items-center justify-between text-[10px] md:text-xs font-bold tracking-widest uppercase text-white/30">
+            <div className="tabular-nums">
+              {!selectedAlbum
+                ? `${filteredAlbums.length} album${filteredAlbums.length === 1 ? "" : "s"}`
+                : `${filteredTracks.length} track${filteredTracks.length === 1 ? "" : "s"}`}
+            </div>
+            <div className="flex items-center gap-3">
+              {selectedAlbum && (
+                <button
+                  onClick={handleBack}
+                  className="lg:hidden flex items-center gap-2 text-white/50 hover:text-yellow-500 transition-all uppercase tracking-widest text-xs font-bold border-b border-white/10 hover:border-yellow-500 pb-1 cursor-pointer"
+                >
+                  <ChevronLeft size={14} /> Back
+                </button>
+              )}
+              {query.trim().length > 0 && (
+                <button
+                  type="button"
+                  onClick={() => setQuery("")}
+                  className="text-white/40 hover:text-yellow-500 transition-colors"
+                >
+                  Clear search
+                </button>
+              )}
+            </div>
+          </div>
         </div>
 
         {selectedAlbum && (
@@ -193,35 +218,25 @@ export const HeroMusic = () => {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={
-                selectedAlbum
-                  ? "Search tracks (title, artist)..."
-                  : "Search albums + tracks..."
+                selectedAlbum ? "Search tracks..." : "Search albums + tracks..."
               }
               className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-transparent text-white placeholder:text-white/30 border border-white/15 focus:outline-none focus:ring-2 focus:ring-yellow-500/40"
             />
           </div>
 
-          <div className="mt-3 flex flex-wrap items-center gap-2 justify-end">
+          <div className="mt-3 flex items-center gap-2 justify-center md:justify-end scale-90 md:scale-100">
             {!selectedAlbum ? (
               <>
                 <select
                   value={albumYearFilter}
                   onChange={(e) => setAlbumYearFilter(e.target.value)}
-                  className="rounded-xl bg-black/35 text-white border border-white/15 px-3 py-2 text-xs font-bold tracking-widest uppercase focus:outline-none focus:ring-2 focus:ring-yellow-500/40"
-                  aria-label="Filter by year"
+                  className={selectClass}
                 >
-                  <option
-                    value="all"
-                    style={{ color: "#0f172a", backgroundColor: "#f8fafc" }}
-                  >
+                  <option className="bg-zinc-900" value="all">
                     All Years
                   </option>
                   {albumYears.map((y) => (
-                    <option
-                      key={y}
-                      value={y}
-                      style={{ color: "#0f172a", backgroundColor: "#f8fafc" }}
-                    >
+                    <option className="bg-zinc-900" key={y} value={y}>
                       {y}
                     </option>
                   ))}
@@ -229,70 +244,40 @@ export const HeroMusic = () => {
 
                 <select
                   value={albumSort}
-                  onChange={(e) =>
-                    setAlbumSort(
-                      e.target.value as
-                        | "recent"
-                        | "name_asc"
-                        | "name_desc"
-                        | "tracks_desc",
-                    )
-                  }
-                  className="rounded-xl bg-black/35 text-white border border-white/15 px-3 py-2 text-xs font-bold tracking-widest uppercase focus:outline-none focus:ring-2 focus:ring-yellow-500/40"
-                  aria-label="Sort albums"
+                  onChange={(e) => setAlbumSort(e.target.value as any)}
+                  className={selectClass}
                 >
-                  <option
-                    value="recent"
-                    style={{ color: "#0f172a", backgroundColor: "#f8fafc" }}
-                  >
+                  <option className="bg-zinc-900" value="recent">
                     Recent
                   </option>
-                  <option
-                    value="name_asc"
-                    style={{ color: "#0f172a", backgroundColor: "#f8fafc" }}
-                  >
+                  <option className="bg-zinc-900" value="name_asc">
                     Name A–Z
                   </option>
-                  <option
-                    value="name_desc"
-                    style={{ color: "#0f172a", backgroundColor: "#f8fafc" }}
-                  >
+                  <option className="bg-zinc-900" value="name_desc">
                     Name Z–A
                   </option>
-                  <option
-                    value="tracks_desc"
-                    style={{ color: "#0f172a", backgroundColor: "#f8fafc" }}
-                  >
+                  <option className="bg-zinc-900" value="tracks_desc">
                     Most Songs
                   </option>
                 </select>
 
-                <div className="inline-flex rounded-xl border border-white/15 overflow-hidden">
-                  <button
-                    type="button"
-                    onClick={() => setAlbumView("list")}
-                    className={`px-3 py-2 text-xs font-bold tracking-widest uppercase transition-colors ${
-                      albumView === "list"
-                        ? "bg-yellow-500 text-black"
-                        : "text-white hover:bg-white/5"
-                    }`}
-                    aria-label="Album list view"
-                  >
-                    List
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setAlbumView("grid")}
-                    className={`px-3 py-2 text-xs font-bold tracking-widest uppercase border-l border-white/15 transition-colors ${
-                      albumView === "grid"
-                        ? "bg-yellow-500 text-black"
-                        : "text-white hover:bg-white/5"
-                    }`}
-                    aria-label="Album grid view"
-                  >
-                    Grid
-                  </button>
-                </div>
+                <button
+                  type="button"
+                  onClick={() =>
+                    setAlbumView(albumView === "list" ? "grid" : "list")
+                  }
+                  className="flex items-center gap-2 rounded-xl bg-white/5 text-white border border-white/15 px-4 py-2 text-xs font-bold tracking-widest uppercase hover:bg-white/10 hover:border-yellow-500/50 transition-all cursor-pointer"
+                >
+                  {albumView === "list" ? (
+                    <>
+                      <LayoutGrid size={14} /> Grid
+                    </>
+                  ) : (
+                    <>
+                      <List size={14} /> List
+                    </>
+                  )}
+                </button>
               </>
             ) : (
               <>
@@ -300,21 +285,13 @@ export const HeroMusic = () => {
                   <select
                     value={trackArtistFilter}
                     onChange={(e) => setTrackArtistFilter(e.target.value)}
-                    className="rounded-xl bg-black/35 text-white border border-white/15 px-3 py-2 text-xs font-bold tracking-widest uppercase focus:outline-none focus:ring-2 focus:ring-yellow-500/40"
-                    aria-label="Filter by artist"
+                    className={selectClass}
                   >
-                    <option
-                      value="all"
-                      style={{ color: "#0f172a", backgroundColor: "#f8fafc" }}
-                    >
+                    <option className="bg-zinc-900" value="all">
                       All Artists
                     </option>
                     {trackArtists.map((a) => (
-                      <option
-                        key={a}
-                        value={a}
-                        style={{ color: "#0f172a", backgroundColor: "#f8fafc" }}
-                      >
+                      <option className="bg-zinc-900" key={a} value={a}>
                         {a}
                       </option>
                     ))}
@@ -323,30 +300,16 @@ export const HeroMusic = () => {
 
                 <select
                   value={trackSort}
-                  onChange={(e) =>
-                    setTrackSort(
-                      e.target.value as "index" | "title_asc" | "title_desc",
-                    )
-                  }
-                  className="rounded-xl bg-black/35 text-white border border-white/15 px-3 py-2 text-xs font-bold tracking-widest uppercase focus:outline-none focus:ring-2 focus:ring-yellow-500/40"
-                  aria-label="Sort tracks"
+                  onChange={(e) => setTrackSort(e.target.value as any)}
+                  className={selectClass}
                 >
-                  <option
-                    value="index"
-                    style={{ color: "#0f172a", backgroundColor: "#f8fafc" }}
-                  >
+                  <option className="bg-zinc-900" value="index">
                     Album Sequence
                   </option>
-                  <option
-                    value="title_asc"
-                    style={{ color: "#0f172a", backgroundColor: "#f8fafc" }}
-                  >
+                  <option className="bg-zinc-900" value="title_asc">
                     Title A–Z
                   </option>
-                  <option
-                    value="title_desc"
-                    style={{ color: "#0f172a", backgroundColor: "#f8fafc" }}
-                  >
+                  <option className="bg-zinc-900" value="title_desc">
                     Title Z–A
                   </option>
                 </select>
@@ -356,63 +319,12 @@ export const HeroMusic = () => {
         </div>
       </motion.div>
 
-      <p className="text-yellow-500 font-bold tracking-[0.4em] uppercase text-xs md:text-sm mb-6">
-        {selectedAlbum ? `Released ${selectedAlbum.year}` : "Discography"}
-      </p>
-
-      <div className="mb-8 flex items-center justify-between text-[10px] md:text-xs font-bold tracking-widest uppercase text-white/30">
-        <div className="tabular-nums">
-          {!selectedAlbum
-            ? `${filteredAlbums.length} album${filteredAlbums.length === 1 ? "" : "s"}`
-            : `${filteredTracks.length} track${filteredTracks.length === 1 ? "" : "s"}`}
-        </div>
-        <div className="flex items-center gap-3">
-          {selectedAlbum && (
-            <button
-              onClick={handleBack}
-              className="lg:hidden flex items-center gap-2 text-white/50 hover:text-yellow-500 transition-all uppercase tracking-widest text-xs font-bold border-b border-white/10 hover:border-yellow-500 pb-1 cursor-pointer"
-            >
-              <ChevronLeft size={14} /> Back
-            </button>
-          )}
-          {query.trim().length > 0 && (
-            <button
-              type="button"
-              onClick={() => setQuery("")}
-              className="text-white/40 hover:text-yellow-500 transition-colors"
-            >
-              Clear search
-            </button>
-          )}
-        </div>
-      </div>
-
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3 }}
-        className="text-gray-400 max-w-4xl mx-auto mb-16 leading-relaxed text-center text-sm md:text-base"
-      >
-        A showcase of{" "}
-        <span className="text-white font-medium">human-AI synergy</span> in
-        music production. Each track is developed through{" "}
-        <span className="text-yellow-500 font-semibold italic">
-          original lyrics
-        </span>{" "}
-        and a technical workflow involving{" "}
-        <span className="text-white font-medium">Suno AI</span>,{" "}
-        <span className="text-white font-medium">CapCut</span> for sequencing,
-        and <span className="text-white font-medium">TagMP3</span> for metadata
-        architecture.
-      </motion.p>
-
       <AnimatePresence mode="wait">
         {!selectedAlbum ? (
-          /* VIEW 1: ALBUM GRID */
           <div className="space-y-10">
             {globalTrackResults.length > 0 && (
               <motion.div
-                key="global-track-results"
+                key="global-results"
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
@@ -430,13 +342,10 @@ export const HeroMusic = () => {
                         key={`${album.id}-${track.id}`}
                         variants={itemVariants}
                         whileHover={{ y: -3 }}
-                        type="button"
-                        onClick={() => handleGlobalTrackSelect(album.id, track.id)}
-                        className={`w-full text-left group flex items-center justify-between p-4 rounded-2xl transition-all cursor-pointer border min-h-[92px] ${
-                          isActive
-                            ? "bg-white/10 border-white/20 shadow-xl"
-                            : "bg-white/5 border-transparent hover:border-white/10 hover:bg-white/10"
-                        }`}
+                        onClick={() =>
+                          handleGlobalTrackSelect(album.id, track.id)
+                        }
+                        className={`w-full text-left group flex items-center justify-between p-4 rounded-2xl transition-all cursor-pointer border min-h-[92px] ${isActive ? "bg-white/10 border-white/20 shadow-xl" : "bg-white/5 border-transparent hover:border-white/10 hover:bg-white/10"}`}
                       >
                         <div className="flex items-center gap-4">
                           <img
@@ -446,11 +355,7 @@ export const HeroMusic = () => {
                           />
                           <div>
                             <h4
-                              className={`text-base md:text-lg font-bold tracking-tight ${
-                                isActive
-                                  ? "text-yellow-500"
-                                  : "text-white group-hover:text-yellow-500"
-                              }`}
+                              className={`text-base md:text-lg font-bold tracking-tight ${isActive ? "text-yellow-500" : "text-white group-hover:text-yellow-500"}`}
                             >
                               {track.title}
                             </h4>
@@ -521,7 +426,6 @@ export const HeroMusic = () => {
                     key={album.id}
                     variants={itemVariants}
                     whileHover={{ y: -3 }}
-                    type="button"
                     onClick={() => handleAlbumSelect(album.id)}
                     className="w-full text-left group flex items-stretch justify-between p-4 rounded-2xl transition-all cursor-pointer border bg-white/5 border-transparent hover:border-white/10 hover:bg-white/10 min-h-[96px]"
                   >
@@ -536,7 +440,8 @@ export const HeroMusic = () => {
                           {album.name}
                         </h3>
                         <p className="text-gray-500 text-[10px] md:text-xs tracking-widest uppercase mt-1">
-                          {album.artist} • {album.year} • {album.tracks.length} Songs
+                          {album.artist} • {album.year} • {album.tracks.length}{" "}
+                          Songs
                         </p>
                       </div>
                     </div>
@@ -549,7 +454,6 @@ export const HeroMusic = () => {
             )}
           </div>
         ) : (
-          /* VIEW 2: TRACK LIST */
           <motion.div
             key="track-list"
             variants={containerVariants}
@@ -560,19 +464,13 @@ export const HeroMusic = () => {
           >
             {filteredTracks.map(({ t: track, idx }) => {
               const isActive = currentTrack?.id === track.id;
-
               return (
                 <motion.div
                   key={track.id}
                   variants={itemVariants}
                   whileTap={{ scale: 0.98 }}
                   onClick={() => (isActive ? togglePlay() : setTrack(track))}
-                  className={`group flex items-center justify-between p-4 rounded-2xl transition-all cursor-pointer border 
-                    ${
-                      isActive
-                        ? "bg-white/10 border-white/20 shadow-xl"
-                        : "bg-white/5 border-transparent hover:border-white/10 hover:bg-white/10"
-                    }`}
+                  className={`group flex items-center justify-between p-4 rounded-2xl transition-all cursor-pointer border ${isActive ? "bg-white/10 border-white/20 shadow-xl" : "bg-white/5 border-transparent hover:border-white/10 hover:bg-white/10"}`}
                 >
                   <div className="flex items-center gap-5 md:gap-8">
                     <div className="w-8 flex justify-center">
@@ -596,23 +494,14 @@ export const HeroMusic = () => {
                         </div>
                       ) : (
                         <span
-                          className={`text-lg font-black italic ${
-                            isActive
-                              ? "text-yellow-500"
-                              : "text-white/20 group-hover:text-yellow-500"
-                          }`}
+                          className={`text-lg font-black italic ${isActive ? "text-yellow-500" : "text-white/20 group-hover:text-yellow-500"}`}
                         >
                           {idx + 1 < 10 ? `0${idx + 1}` : idx + 1}
                         </span>
                       )}
                     </div>
-
                     <div
-                      className={`w-14 h-14 rounded-lg overflow-hidden shrink-0 border-2 transition-all ${
-                        isActive
-                          ? "border-yellow-500 shadow-[0_0_15px_rgba(212,175,55,0.3)]"
-                          : "border-white/10"
-                      }`}
+                      className={`w-14 h-14 rounded-lg overflow-hidden shrink-0 border-2 transition-all ${isActive ? "border-yellow-500 shadow-[0_0_15px_rgba(212,175,55,0.3)]" : "border-white/10"}`}
                     >
                       <img
                         src={track.coverUrl}
@@ -620,26 +509,16 @@ export const HeroMusic = () => {
                         className="w-full h-full object-cover"
                       />
                     </div>
-
                     <div>
                       <h4
-                        className={`text-lg md:text-xl font-bold tracking-tight ${
-                          isActive
-                            ? "text-yellow-500"
-                            : "text-white group-hover:text-yellow-500"
-                        }`}
+                        className={`text-lg md:text-xl font-bold tracking-tight ${isActive ? "text-yellow-500" : "text-white group-hover:text-yellow-500"}`}
                       >
                         {track.title}
                       </h4>
                     </div>
                   </div>
-
                   <div
-                    className={`${
-                      isActive
-                        ? "opacity-100"
-                        : "opacity-0 group-hover:opacity-100"
-                    } transition-all pr-4`}
+                    className={`${isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"} transition-all pr-4`}
                   >
                     {isActive && isPlaying ? (
                       <div className="text-yellow-500 flex gap-1 font-black">
