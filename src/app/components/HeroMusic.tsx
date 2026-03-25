@@ -202,7 +202,7 @@ export const HeroMusic = () => {
         {selectedAlbum && (
           <button
             onClick={handleBack}
-            className="hidden lg:flex absolute top-0 right-0 items-center gap-2 text-white/50 hover:text-yellow-500 transition-all uppercase tracking-widest text-xs font-bold border-b border-white/10 hover:border-yellow-500 pb-1 cursor-pointer"
+            className="hidden lg:flex absolute md:top-30 right-0 items-center gap-2 text-white/50 hover:text-yellow-500 transition-all uppercase tracking-widest text-xs font-bold border-b border-white/10 hover:border-yellow-500 pb-1 cursor-pointer"
           >
             <ChevronLeft size={14} /> Back
           </button>
