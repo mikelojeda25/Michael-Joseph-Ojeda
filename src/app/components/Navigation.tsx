@@ -41,6 +41,7 @@ export function Navigation() {
     { label: "Dev Projects", id: "projects" },
     { label: "Artwork", id: "artwork" },
     { label: "Music", id: "music", path: "/music", isPage: true },
+    { label: "Creatives", id: "creatives", path: "/creatives", isPage: true },
     { label: "Contact", id: "contact", path: "/contact", isPage: true },
     { label: "Download CV", id: "cv", isSpecial: true },
   ];

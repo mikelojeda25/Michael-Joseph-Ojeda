@@ -17,6 +17,8 @@ export const MusicPlayerBar = () => {
   const [duration, setDuration] = useState(0);
   const [isRepeating, setIsRepeating] = useState(false);
   const [isTouching, setIsTouching] = useState(false);
+  const [isSeeking, setIsSeeking] = useState(false);
+  const [seekTime, setSeekTime] = useState(0);
 
   const {
     currentTrack,
@@ -56,13 +58,10 @@ export const MusicPlayerBar = () => {
     return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
   };
 
-  const handleProgressChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newTime = Number(e.target.value);
-    if (audioRef.current) {
-      audioRef.current.currentTime = newTime;
-      setCurrentTime(newTime);
-    }
-  };
+  const activeTime = isSeeking ? seekTime : currentTime;
+  const safeDuration = Number.isFinite(duration) && duration > 0 ? duration : 0;
+  const progressPct =
+    safeDuration > 0 ? Math.min(100, (activeTime / safeDuration) * 100) : 0;
 
   // 2. EFFECTS
   useEffect(() => {
@@ -76,6 +75,14 @@ export const MusicPlayerBar = () => {
       }
     }
   }, [isPlaying, currentTrack]);
+
+  useEffect(() => {
+    if (!currentTrack) return;
+    setCurrentTime(0);
+    setDuration(0);
+    setIsSeeking(false);
+    setSeekTime(0);
+  }, [currentTrack?.id]);
 
   if (!currentTrack) return null;
 
@@ -115,21 +122,38 @@ export const MusicPlayerBar = () => {
           <input
             type="range"
             min="0"
-            max={duration || 0}
-            value={currentTime}
-            onChange={handleProgressChange}
+            max={safeDuration}
+            value={activeTime}
+            onPointerDown={() => setIsSeeking(true)}
+            onPointerUp={(e) => {
+              const newTime = Number((e.target as HTMLInputElement).value);
+              setIsSeeking(false);
+              if (audioRef.current) {
+                audioRef.current.currentTime = newTime;
+              }
+              setCurrentTime(newTime);
+            }}
+            onChange={(e) => {
+              const newTime = Number(e.target.value);
+              setSeekTime(newTime);
+              if (!isSeeking && audioRef.current) {
+                audioRef.current.currentTime = newTime;
+                setCurrentTime(newTime);
+              }
+            }}
             className="absolute w-full h-full bg-transparent appearance-none cursor-pointer z-20"
+            aria-label="Seek"
           />
 
           <div
             className={`absolute -top-10 left-1/2 -translate-x-1/2 bg-yellow-500 text-black text-[10px] font-black px-2 py-1 rounded shadow-xl transition-opacity duration-200 z-30 ${isTouching ? "opacity-100" : "opacity-0"}`}
           >
-            {formatTime(currentTime)} / {formatTime(duration)}
+            {formatTime(activeTime)} / {formatTime(safeDuration)}
           </div>
 
           <div
             className="absolute h-[3px] bg-yellow-500 z-10 transition-all duration-100 ease-linear"
-            style={{ width: `${(currentTime / duration) * 100}%` }}
+            style={{ width: `${progressPct}%` }}
           />
           <div className="w-full h-[3px] bg-white/10" />
         </div>
@@ -152,6 +176,11 @@ export const MusicPlayerBar = () => {
               <p className="text-[8px] md:text-[10px] text-gray-500 uppercase tracking-widest font-bold truncate">
                 {currentTrack.artist}
               </p>
+              <div className="mt-1 flex items-center gap-2 text-[10px] md:text-xs font-bold tracking-widest uppercase text-white/30">
+                <span className="tabular-nums">{formatTime(activeTime)}</span>
+                <span className="opacity-40">/</span>
+                <span className="tabular-nums">{formatTime(safeDuration)}</span>
+              </div>
             </div>
           </div>
 
@@ -161,6 +190,7 @@ export const MusicPlayerBar = () => {
               <button
                 onClick={shuffle}
                 className="hidden md:block text-gray-500 hover:text-yellow-500 transition-colors"
+                aria-label="Shuffle"
               >
                 <Shuffle size={18} />
               </button>
@@ -168,6 +198,7 @@ export const MusicPlayerBar = () => {
               <button
                 onClick={prevTrack}
                 className="text-white hover:text-yellow-500 active:scale-90 transition-all"
+                aria-label="Previous track"
               >
                 <SkipBack size={20} fill="currentColor" />
               </button>
@@ -175,6 +206,7 @@ export const MusicPlayerBar = () => {
               <button
                 onClick={togglePlay}
                 className="bg-yellow-500 text-black w-10 h-10 md:w-12 md:h-12 rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(234,179,8,0.3)] hover:scale-110 active:scale-95 transition-all"
+                aria-label={isPlaying ? "Pause" : "Play"}
               >
                 {isPlaying ? (
                   <Pause size={18} fill="currentColor" />
@@ -186,6 +218,7 @@ export const MusicPlayerBar = () => {
               <button
                 onClick={nextTrack}
                 className="text-white hover:text-yellow-500 active:scale-90 transition-all"
+                aria-label="Next track"
               >
                 <SkipForward size={20} fill="currentColor" />
               </button>
@@ -193,6 +226,7 @@ export const MusicPlayerBar = () => {
               <button
                 onClick={() => setIsRepeating(!isRepeating)}
                 className={`hidden md:block transition-colors ${isRepeating ? "text-yellow-500" : "text-gray-500 hover:text-white"}`}
+                aria-label="Repeat"
               >
                 <Repeat size={18} />
               </button>
@@ -221,17 +255,30 @@ export const MusicPlayerBar = () => {
         <audio
           ref={audioRef}
           src={currentTrack.audioUrl}
-          onTimeUpdate={() =>
-            audioRef.current && setCurrentTime(audioRef.current.currentTime)
-          }
-          onLoadedMetadata={() =>
-            audioRef.current && setDuration(audioRef.current.duration)
-          }
+          onTimeUpdate={() => {
+            if (!audioRef.current) return;
+            if (isSeeking) return;
+            setCurrentTime(audioRef.current.currentTime);
+          }}
+          onLoadedMetadata={() => {
+            if (!audioRef.current) return;
+            setDuration(audioRef.current.duration);
+          }}
+          onDurationChange={() => {
+            if (!audioRef.current) return;
+            setDuration(audioRef.current.duration);
+          }}
           onEnded={handleEnded}
         />
       </div>
 
-      <MusicInfo isOpen={isInfoOpen} onClose={() => setIsInfoOpen(false)} />
+      <MusicInfo
+        isOpen={isInfoOpen}
+        onClose={() => setIsInfoOpen(false)}
+        onShuffle={shuffle}
+        onToggleRepeat={() => setIsRepeating(!isRepeating)}
+        isRepeating={isRepeating}
+      />
     </>
   );
 };
