@@ -1,10 +1,10 @@
 import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navigation } from "./components/Navigation";
+import VideoGallery from "./components/VideoGallery";
 import { Hero } from "./components/Hero";
 import { HeroMusic } from "./components/HeroMusic";
 import { HeroCreatives } from "./components/HeroCreatives";
-import { CreativeFolderPage } from "./components/CreativeFolderPage";
 import { MusicPlayerBar } from "./components/MusicPlayerBar";
 
 // Handling Named Exports with Lazy Loading
@@ -62,49 +62,60 @@ export default function App() {
                   <TechStack />
                   <About />
                   <Projects />
-                  <Artwork />
                   <Footer />
                 </>
               }
             ></Route>
             <Route path="/music" element={<HeroMusic />} />
-            <Route path="/creatives" element={<HeroCreatives />} />
+            <Route
+              path="/creatives"
+              element={
+                <div className="min-h-screen flex flex-col">
+                  <div className="flex-1 overflow-auto">
+                    <HeroCreatives />
+                  </div>
+                  <div className="lg:hidden">
+                    <Footer />
+                  </div>
+                </div>
+              }
+            />
             <Route
               path="/creatives/visual-editing"
               element={
-                <CreativeFolderPage
-                  title="Visual Editing"
-                  subtitle="Video / Motion / Cuts"
-                />
+                <>
+                  <Suspense
+                    fallback={
+                      <div className="min-h-screen flex items-center justify-center text-white">
+                        Loading...
+                      </div>
+                    }
+                  >
+                    <VideoGallery />
+                  </Suspense>
+                  <Footer />
+                </>
               }
             />
             <Route
-              path="/creatives/digital-arts"
+              path="/creatives/artworks"
               element={
-                <CreativeFolderPage
-                  title="Digital Arts"
-                  subtitle="Illustration / Concept"
-                />
+                <>
+                  <Artwork />
+                  <Footer />
+                </>
               }
             />
             <Route
-              path="/creatives/graphic-design"
+              path="/creatives/web-development"
               element={
-                <CreativeFolderPage
-                  title="Graphic Design"
-                  subtitle="Brand / Layout / Print"
-                />
+                <>
+                  <Projects />
+                  <Footer />
+                </>
               }
             />
-            <Route
-              path="/creatives/ui-design"
-              element={
-                <CreativeFolderPage
-                  title="UI Design"
-                  subtitle="Wireframes / Systems"
-                />
-              }
-            />
+
             <Route
               path="/contact"
               element={

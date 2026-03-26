@@ -6,32 +6,46 @@ type CreativeFolder = {
   subtitle: string;
   path: string;
   variant: "image" | "text";
+  imageUrl: string;
+  alt: string;
 };
 
 const folders: CreativeFolder[] = [
   {
-    title: "Visual Editing",
-    subtitle: "Video / Motion / Cuts",
+    title: "Editing",
+    subtitle: "Photo / Video",
     path: "/creatives/visual-editing",
     variant: "image",
+    imageUrl:
+      "https://res.cloudinary.com/dd5gbzoti/image/upload/dpr_auto,f_auto,q_auto/v1774520390/1774513939241_abxidf.png",
+    alt: "Visual editing workspace",
   },
   {
-    title: "Digital Arts",
-    subtitle: "Illustration / Concept",
-    path: "/creatives/digital-arts",
-    variant: "text",
+    title: "Artworks",
+    subtitle: "Digital & Concept Art ",
+    path: "/creatives/artworks",
+    variant: "image",
+    imageUrl:
+      "https://res.cloudinary.com/dd5gbzoti/image/upload/dpr_auto,f_auto,q_auto/file_0000000036f471fd87db9eda517ce711_xe2ljc.png",
+    alt: "Digital artworks",
   },
   {
-    title: "Graphic Design",
-    subtitle: "Brand / Layout / Print",
-    path: "/creatives/graphic-design",
-    variant: "text",
+    title: "Web Dev",
+    subtitle: "Design / Programming",
+    path: "/creatives/web-development",
+    variant: "image",
+    imageUrl:
+      "https://res.cloudinary.com/dd5gbzoti/image/upload/dpr_auto,f_auto,q_auto/v1774520390/file_000000000da071f5bfc98ec3ab60edd6_rafz0b.png",
+    alt: "Web development",
   },
   {
-    title: "UI Design",
-    subtitle: "Wireframes / Systems",
-    path: "/creatives/ui-design",
-    variant: "text",
+    title: "SUNO MUSIC",
+    subtitle: "Songwriting / Poetry",
+    path: "/music",
+    variant: "image",
+    imageUrl:
+      "https://res.cloudinary.com/dd5gbzoti/image/upload/dpr_auto,f_auto,q_auto/v1774520390/file_00000000715871fda281a84e8eecd57c_y3xylr.png",
+    alt: "Music production",
   },
 ];
 
@@ -39,82 +53,74 @@ export const HeroCreatives = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="py-20 px-6 max-w-7xl mx-auto mb-20 overflow-hidden">
-      <motion.div
-        initial={{ opacity: 0, x: -20 }}
-        animate={{ opacity: 1, x: 0 }}
-        className="flex justify-between items-end mb-10"
-      >
-        <div>
-          <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-none">
+    /* FIXED: bg-zinc-950 ensures no white space during stagger animation */
+    <section className="relative w-full min-h-screen bg-zinc-950 overflow-hidden">
+      {/* Top Gradient Overlay - Greenish Tint */}
+      <div className="absolute inset-0 pointer-events-none z-20 bg-gradient-to-b from-[#051510] via-transparent to-transparent h-[25%]" />
+
+      {/* Mobile Header */}
+      <div className="relative z-30 pt-20 px-6 lg:hidden mb-10">
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+        >
+          <h2 className="text-4xl font-black text-white tracking-tighter uppercase italic">
             Creatives
           </h2>
-          <p className="text-yellow-500 font-bold tracking-[0.4em] uppercase text-xs md:text-sm mt-3">
-            Dashboard
-          </p>
-        </div>
-      </motion.div>
+          <div className="h-1 w-12 bg-black/80 mt-2" />{" "}
+          {/* Green accent line */}
+        </motion.div>
+      </div>
 
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.2 }}
-        className="text-gray-400 max-w-4xl mx-auto mb-16 leading-relaxed text-center text-sm md:text-base"
-      >
-        Pick a folder to explore: editing workflows, digital pieces, design work,
-        and UI explorations.
-      </motion.p>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+      {/* Grid/Flex Container */}
+      <div className="flex flex-col lg:flex-row lg:absolute lg:inset-0 w-full h-full lg:gap-0 gap-4 p-4 lg:p-0">
         {folders.map((folder, idx) => (
           <motion.button
             key={folder.path}
+            layout
             type="button"
             onClick={() => navigate(folder.path)}
-            initial={{ opacity: 0, y: 16 }}
+            initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.08 * idx }}
-            whileHover={{ y: -8 }}
-            whileTap={{ scale: 0.98 }}
-            className="text-left group rounded-2xl border border-white/5 bg-white/5 hover:bg-white/10 ring-1 ring-white/10 hover:ring-yellow-500/40 transition-all duration-500 overflow-hidden"
+            transition={{
+              delay: 0.1 * idx,
+              duration: 0.8,
+              ease: [0.22, 1, 0.36, 1],
+              layout: { duration: 0.4 },
+            }}
+            whileHover={{
+              flexGrow:
+                typeof window !== "undefined" && window.innerWidth > 1024
+                  ? 1.4
+                  : 1,
+            }}
+            className="relative flex-1 min-h-[350px] lg:min-h-full overflow-hidden group border border-emerald-900/20 lg:border-none rounded-2xl lg:rounded-none bg-black"
           >
-            <div className="p-5">
-              <p className="text-white/30 text-[10px] tracking-[0.35em] uppercase font-bold">
-                Folder
-              </p>
-              <h3 className="mt-2 text-xl md:text-2xl font-black text-white uppercase italic group-hover:text-yellow-500 transition-colors leading-tight">
-                {folder.title}
-              </h3>
-              <p className="mt-2 text-xs text-gray-400 tracking-widest uppercase">
-                {folder.subtitle}
-              </p>
+            {/* Background Image with Green Overlay */}
+            <div className="absolute inset-0 z-10">
+              <motion.img
+                src={folder.imageUrl}
+                alt={folder.alt}
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.8 }}
+                className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700"
+              />
+              {/* The "Green Gradient" Vibe */}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#061a14] via-[#061a14]/40 to-transparent mix-blend-multiply opacity-90 group-hover:opacity-60 transition-all duration-500" />
             </div>
 
-            <div className="px-5 pb-5">
-              <div
-                className={`relative w-full rounded-xl overflow-hidden border border-white/5 ${
-                  folder.variant === "image"
-                    ? "aspect-[4/5]"
-                    : "aspect-[4/5] bg-gradient-to-br from-[#14433D] via-[#0B2F2A] to-black"
-                }`}
-              >
-                {folder.variant === "image" ? (
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37]/20 via-[#14433D]/20 to-black/40" />
-                ) : (
-                  <div className="absolute inset-0 opacity-60 bg-[radial-gradient(circle_at_30%_20%,rgba(212,175,55,0.25),transparent_55%),radial-gradient(circle_at_70%_80%,rgba(20,67,61,0.45),transparent_60%)]" />
-                )}
-
-                <div className="absolute inset-0 flex items-end justify-between p-4">
-                  <div className="flex items-center gap-2">
-                    <span className="inline-flex h-2 w-2 rounded-full bg-yellow-500/80" />
-                    <span className="text-white/70 text-[11px] font-bold tracking-widest uppercase">
-                      Open
-                    </span>
-                  </div>
-                  <span className="text-white/40 text-sm font-black italic group-hover:text-yellow-500 transition-colors">
-                    →
-                  </span>
-                </div>
+            {/* Text Content */}
+            <div className="absolute inset-0 z-30 flex flex-col justify-end p-8 lg:items-center lg:justify-center">
+              <div className="lg:text-center">
+                <p className="text-yellow-500 text-[10px] tracking-[0.4em] uppercase font-black mb-2 opacity-80 font-weight-bold text-shadow-2xs">
+                  Expertise
+                </p>
+                <h3 className="text-3xl md:text-4xl font-black text-white uppercase italic leading-none group-hover:tracking-wider transition-all duration-500">
+                  {folder.title}
+                </h3>
+                <p className="text-[11px] text-yellow-400 font-medium tracking-[0.1em] uppercase lg:opacity-0 lg:group-hover:opacity-100 transition-all duration-500 pt-2 inline-block text-shadow-2xs">
+                  {folder.subtitle}
+                </p>
               </div>
             </div>
           </motion.button>
@@ -123,4 +129,3 @@ export const HeroCreatives = () => {
     </section>
   );
 };
-

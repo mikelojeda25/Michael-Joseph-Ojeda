@@ -7,7 +7,10 @@ type CreativeFolderPageProps = {
   subtitle: string;
 };
 
-export const CreativeFolderPage = ({ title, subtitle }: CreativeFolderPageProps) => {
+export const CreativeFolderPage = ({
+  title,
+  subtitle,
+}: CreativeFolderPageProps) => {
   const navigate = useNavigate();
 
   return (
@@ -42,12 +45,12 @@ export const CreativeFolderPage = ({ title, subtitle }: CreativeFolderPageProps)
       >
         <div className="max-w-3xl">
           <p className="text-gray-400 leading-relaxed text-sm md:text-base">
-            This folder is ready. Drop your work here (images/videos), or tell me
-            what layout you want inside this section and I’ll build it to match.
+            This folder is ready. Drop your work here (images/videos), or tell
+            me what layout you want inside this section and I’ll build it to
+            match.
           </p>
         </div>
       </motion.div>
     </section>
   );
 };
-

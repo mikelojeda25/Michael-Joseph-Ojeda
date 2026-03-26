@@ -166,7 +166,7 @@ export const HeroMusic = () => {
       >
         <div className=" items-end justify-between gap-4">
           <h2 className="text-4xl md:text-6xl font-black text-white tracking-tighter uppercase italic leading-none">
-            {selectedAlbum ? selectedAlbum.name : "Sonic Archives"}
+            {selectedAlbum ? selectedAlbum.name : "Music Albums"}
           </h2>
           <p className="text-yellow-500 font-bold tracking-[0.4em] uppercase text-xs md:text-sm mb-6">
             {selectedAlbum ? `Released ${selectedAlbum.year}` : "Discography"}
@@ -218,7 +218,7 @@ export const HeroMusic = () => {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={
-                selectedAlbum ? "Search tracks..." : "Search albums + tracks..."
+                selectedAlbum ? "Search songs..." : "Search albums..."
               }
               className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-transparent text-white placeholder:text-white/30 border border-white/15 focus:outline-none focus:ring-2 focus:ring-yellow-500/40"
             />
