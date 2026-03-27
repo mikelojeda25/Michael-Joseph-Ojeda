@@ -191,7 +191,7 @@ export function Navigation() {
 
                 {/* Mobile Dropdown for Creatives */}
                 {item.label === "Creatives" && showCreativesMobile && (
-                  <div className="flex flex-col mt-2 mx-auto bg-[#b4a93f25] shadow-md divide-y divide-[#14433D] w-full">
+                  <div className="flex flex-col mt-2 mx-auto bg-[#b4a93f25] shadow-md divide-y divide-[#16534b] w-full">
                     {creativesSubLinks.map((sub) => (
                       <button
                         key={sub.label}
