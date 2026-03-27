@@ -12,7 +12,7 @@ export const VideoEdits: VideoEdit[] = [
   {
     id: "vid-1",
     title: "Ground Zero",
-    description: "Official Video Edit for Ground Zero",
+    description: "Official Video Edit for Ground Zero Animation Trailer",
     videoUrl:
       "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774542718/Ground_Zero_tahlr8.mp4",
     thumbnailUrl:
@@ -52,7 +52,7 @@ export const VideoEdits: VideoEdit[] = [
   {
     id: "vid-5",
     title: "Hollow World - Mobile Version",
-    description: "Short form content for Hollow World",
+    description: "Portrait view content for Hollow World",
     videoUrl:
       "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774529927/Hollow_World_-_Tiktok_1_eluw7k.mp4",
     thumbnailUrl:
