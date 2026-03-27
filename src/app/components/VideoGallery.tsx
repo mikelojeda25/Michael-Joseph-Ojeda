@@ -41,7 +41,6 @@ const VideoGallery: React.FC = () => {
             key={video.id}
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
-            whileHover={{ y: -5 }}
             className="group flex flex-col bg-white/5 border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-500/50 hover:bg-white/10 transition-all duration-500 shadow-2xl"
             onClick={() => handlePlayVideo(video.id)}
           >
