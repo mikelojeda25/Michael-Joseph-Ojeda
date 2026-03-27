@@ -163,6 +163,7 @@ export function Navigation() {
                 key={item.label}
                 className="w-full flex flex-col items-center"
               >
+                {/* Main Nav Button */}
                 <button
                   onClick={() => {
                     if (item.isPage) {
@@ -179,14 +180,18 @@ export function Navigation() {
                       handleNavClick(item.id!);
                     }
                   }}
-                  className="text-2xl text-white/80 hover:text-[#D4AF37] w-full text-center py-2"
+                  className={`text-2xl w-full text-center py-2 rounded-md transition-colors ${
+                    item.label === "Creatives" && showCreativesMobile
+                      ? "text-[#D4AF37]" // yellow kapag dropdown open
+                      : "text-white/80 hover:text-[#D4AF37]"
+                  }`}
                 >
                   {item.label}
                 </button>
 
-                {/* Mobile Dropdown */}
+                {/* Mobile Dropdown for Creatives */}
                 {item.label === "Creatives" && showCreativesMobile && (
-                  <div className="flex flex-col mt-2 space-y-2">
+                  <div className="flex flex-col mt-2 mx-auto bg-[#b4a93f25] shadow-md divide-y divide-[#14433D] w-full">
                     {creativesSubLinks.map((sub) => (
                       <button
                         key={sub.label}
@@ -195,7 +200,7 @@ export function Navigation() {
                           setIsMobileMenuOpen(false);
                           setShowCreativesMobile(false);
                         }}
-                        className="text-xl text-green-500 hover:text-[#D4AF37] transition-colors"
+                        className="text-center w-full px-4 py-2 text-white/90 hover:bg-[#14433D] hover:text-[#D4AF37] transition-colors rounded-md"
                       >
                         {sub.label}
                       </button>
