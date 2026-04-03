@@ -143,7 +143,7 @@ export function Projects() {
                       >
                         <Github
                           size={24}
-                          className="text-white"
+                          className="text-yellow-600"
                           aria-hidden="true"
                           rel="noopener"
                         />
