@@ -13,6 +13,15 @@ import image8 from "@/images/robin.webp";
 
 const projects = [
   {
+    title: "Kitty Supps",
+    description:
+      "A responsive funnel website built for speed and simplicity. Designed to guide users efficiently through the funnel toward conversion, with subtle CSS animations.",
+    image:
+      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1775229027/KittySupps_ljghfj.png",
+    link: "https://kittysupps.netlify.app/",
+    gitHub: "https://github.com/mikelojeda25/responsive_product_page",
+  },
+  {
     title: "Pahrump Realtor",
     description:
       "A responsive site focused on speed and simplicity. I used basic CSS animations to give the minimalist design a more polished and engaging feel.",
@@ -61,14 +70,6 @@ const projects = [
     image: image8,
     link: "https://robindelivery.netlify.app",
     gitHub: "https://github.com/mikelojeda25/Robin-Delivery",
-  },
-  {
-    title: "LNDP - Portal",
-    description:
-      "A React website featuring filter and sort capabilities. I built this to showcase how to handle complex data sets while maintaining a fast and intuitive user interface.",
-    image: image5,
-    link: "https://lndp.netlify.app",
-    gitHub: "https://github.com/mikelojeda25/LNDP",
   },
   {
     title: "Savvy Mama",
