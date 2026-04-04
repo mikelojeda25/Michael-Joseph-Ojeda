@@ -12,6 +12,7 @@ import image7 from "@/images/Amara.webp";
 import image8 from "@/images/robin.webp";
 
 const projects = [
+git 
   {
     title: "Pahrump Realtor",
     description:
