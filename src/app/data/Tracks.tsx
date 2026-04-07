@@ -21,6 +21,7 @@ import { bertudLyrics } from "./Lyrics/bertud";
 import { barelyAliveLyrics } from "./Lyrics/barely-alive";
 import { driftAwayLyrics } from "./Lyrics/drift-away";
 import { pocketMoneyLyrics } from "./Lyrics/pocket-money";
+import { scratchLyrics } from "./Lyrics/scratch";
 import { dontThinkItLyrics } from "./Lyrics/dont-think-it";
 import { myHelpLyrics } from "./Lyrics/my-help";
 import { silenceRemembersMeLyrics } from "./Lyrics/silence-remembers-me";
@@ -315,6 +316,16 @@ export const Albums: Album[] = [
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773849169/IMG_20260318_235127_eeevha.png",
         lyrics: pocketMoneyLyrics,
+      },
+      {
+        id: "hp-8843",
+        title: "Scratch",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1775576443/Scratch_h40uss.wav",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
+        lyrics: scratchLyrics,
       },
       {
         id: "hp-8",

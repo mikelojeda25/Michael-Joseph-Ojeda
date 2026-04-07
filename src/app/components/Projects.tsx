@@ -12,7 +12,15 @@ import image7 from "@/images/Amara.webp";
 import image8 from "@/images/robin.webp";
 
 const projects = [
-git 
+  {
+    title: "Kitty Supps",
+    description:
+      "A responsive funnel website built for speed and simplicity. Designed to guide users efficiently through the funnel toward conversion, with subtle CSS animations.",
+    image:
+      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1775229027/KittySupps_ljghfj.png",
+    link: "https://kittysupps.netlify.app/",
+    gitHub: "https://github.com/mikelojeda25/responsive_product_page",
+  },
   {
     title: "Pahrump Realtor",
     description:
