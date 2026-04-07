@@ -322,7 +322,7 @@ export const Albums: Album[] = [
         title: "Scratch",
         artist: "Yozef",
         audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1775576443/Scratch_h40uss.wav",
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1775578344/scratch-final_skbu6j.wav",
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1772772863/Untitled244_20260306111011_bijg3y.png",
         lyrics: scratchLyrics,
