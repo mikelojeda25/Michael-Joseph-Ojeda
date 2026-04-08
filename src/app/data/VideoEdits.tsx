@@ -12,7 +12,8 @@ export const VideoEdits: VideoEdit[] = [
   {
     id: "vid-965",
     title: "Help In Need",
-    description: "A Video Edit using Magic Light AI, Capcut, and Voicebooking",
+    description:
+      "A Video Edit using Magic Light AI, Luma AI, Capcut, and Voicebooking",
     videoUrl:
       "https://res.cloudinary.com/dd5gbzoti/video/upload/v1775616011/Help_in_need_cr32wi.mp4",
     thumbnailUrl:
