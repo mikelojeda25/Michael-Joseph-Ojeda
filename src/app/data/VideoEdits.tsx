@@ -13,17 +13,18 @@ export const VideoEdits: VideoEdit[] = [
     id: "vid-965",
     title: "Help In Need",
     description:
-      "A Video Edit using Magic Light AI, Luma AI, Capcut, and Voicebooking",
+      "A video edit created with Magic Light AI, Luma AI, Gemini, Capcut, and Voicebooking.",
     videoUrl:
-      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1775616011/Help_in_need_cr32wi.mp4",
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1775663442/h-i-n_axoelb.mp4",
     thumbnailUrl:
-      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1775616011/Help_in_need_cr32wi.jpg",
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1775663442/h-i-n_axoelb.jpg",
     category: "Animation",
   },
   {
     id: "vid-1",
     title: "Ground Zero",
-    description: "Official Video Edit for Ground Zero Animation Trailer",
+    description:
+      "Official video edit for the Ground Zero animation trailer, produced using Capcut, ibisPaint, and Photoshop.",
     videoUrl:
       "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774542718/Ground_Zero_tahlr8.mp4",
     thumbnailUrl:
@@ -33,7 +34,8 @@ export const VideoEdits: VideoEdit[] = [
   {
     id: "vid-2",
     title: "I'm Mine Alone - Mobile Version",
-    description: "Visualizer for I'm Mine Alone",
+    description:
+      "Visualizer for 'I'm Mine Alone' utilizing Capcut, Suno AI, and Gemini-generated artwork.",
     videoUrl:
       "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774531701/Im_Mine_ALONE_gkiqv7.mp4",
     thumbnailUrl:
@@ -43,7 +45,8 @@ export const VideoEdits: VideoEdit[] = [
   {
     id: "vid-3",
     title: "Alapaap",
-    description: "Alapaap Lyric Video / Edit",
+    description:
+      "Alapaap Lyric Video / Edit using Capcut, Suno AI for music, and Gemini for the background",
     videoUrl:
       "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774531673/Alapaap_jolkde.mp4",
     thumbnailUrl:
@@ -53,7 +56,8 @@ export const VideoEdits: VideoEdit[] = [
   {
     id: "vid-4",
     title: "Hollow World",
-    description: "Full Edit for Hollow World",
+    description:
+      "Showcasing my hand-drawn artwork (created with ibisPaint), and Capcut/Gemini for the background effects.",
     videoUrl:
       "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774531355/Hollow_World_tv3p1r.mp4",
     thumbnailUrl:
