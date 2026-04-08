@@ -10,6 +10,16 @@ export interface VideoEdit {
 
 export const VideoEdits: VideoEdit[] = [
   {
+    id: "vid-965",
+    title: "Help In Need",
+    description: "A Video Edit using Magic Light AI, Capcut, and Voicebooking",
+    videoUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1775616011/Help_in_need_cr32wi.mp4",
+    thumbnailUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1775616011/Help_in_need_cr32wi.jpg",
+    category: "Animation",
+  },
+  {
     id: "vid-1",
     title: "Ground Zero",
     description: "Official Video Edit for Ground Zero Animation Trailer",
