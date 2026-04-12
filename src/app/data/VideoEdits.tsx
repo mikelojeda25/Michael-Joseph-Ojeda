@@ -10,6 +10,17 @@ export interface VideoEdit {
 
 export const VideoEdits: VideoEdit[] = [
   {
+    id: "vid-371",
+    title: "Sunflower",
+    description:
+      "A video edit created with Meta AI, Gemini, ChatGPT, and Capcut.",
+    videoUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1775955336/Sunflower_1_s0zlkt.mp4",
+    thumbnailUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1775955336/Sunflower_1_s0zlkt.jpg",
+    category: "Animation",
+  },
+  {
     id: "vid-965",
     title: "Help In Need",
     description:
