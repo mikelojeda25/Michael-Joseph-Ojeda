@@ -3,14 +3,14 @@ export interface VideoEdit {
   title: string;
   description: string;
   videoUrl: string;
-  thumbnailUrl?: string; // Optional: para sa preview image bago i-play
+  thumbnailUrl?: string;
   thumbnailCloudinaryId?: string;
   category: "Animation" | "Lyric Video";
 }
 
 export const VideoEdits: VideoEdit[] = [
   {
-    id: "vid-371",
+    id: "vid-248",
     title: "Rhodiola Rosea",
     description: "A video edit created with Capcut.",
     videoUrl:
