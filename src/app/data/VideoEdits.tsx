@@ -15,9 +15,9 @@ export const VideoEdits: VideoEdit[] = [
     description:
       "A video edit created with Meta AI, Gemini, ChatGPT, and Capcut.",
     videoUrl:
-      "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1775955336/Sunflower_1_s0zlkt.mp4",
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1775957860/Sunflower-Final_txqm96.mp4",
     thumbnailUrl:
-      "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1775955336/Sunflower_1_s0zlkt.jpg",
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1775957860/Sunflower-Final_txqm96.jpg",
     category: "Animation",
   },
   {
