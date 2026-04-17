@@ -11,13 +11,13 @@ export interface VideoEdit {
 export const VideoEdits: VideoEdit[] = [
   {
     id: "vid-189",
-    title: "NatureGo",
+    title: "Nature Go",
     description:
       "Spec ad for NatureGo, produced using Meta AI for footage, ElevenLabs for emotive narration, and CapCut for final post-production.",
     videoUrl:
-      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776395082/NatureGo_hmmzbe.mp4",
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1776396137/NG_ispv1u.mp4",
     thumbnailUrl:
-      "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1776395082/NatureGo_hmmzbe.jpg",
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1776396137/NG_ispv1u.jpg",
     category: "Spec Ad / Reels",
   },
   {
