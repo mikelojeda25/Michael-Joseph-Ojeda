@@ -10,6 +10,17 @@ export interface VideoEdit {
 
 export const VideoEdits: VideoEdit[] = [
   {
+    id: "vid-189",
+    title: "NatureGo",
+    description:
+      "Spec ad for NatureGo, produced using Meta AI for footage, ElevenLabs for emotive narration, and CapCut for final post-production.",
+    videoUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776395082/NatureGo_hmmzbe.mp4",
+    thumbnailUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1776395082/NatureGo_hmmzbe.jpg",
+    category: "Spec Ad / Reels",
+  },
+  {
     id: "vid-248",
     title: "Rhodiola Rosea",
     description: "A video edit created with Capcut.",
@@ -23,7 +34,7 @@ export const VideoEdits: VideoEdit[] = [
     id: "vid-371",
     title: "Sunflower",
     description:
-      "A video edit created with Meta AI, Gemini, ChatGPT, and Capcut.",
+      "An animation created with Meta AI, Gemini, ChatGPT, and assembled through Capcut.",
     videoUrl:
       "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1775957860/Sunflower-Final_txqm96.mp4",
     thumbnailUrl:
