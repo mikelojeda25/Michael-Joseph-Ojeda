@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import MyCV from "@/files/Resume_Ojeda_Michael-Joseph.pdf";
+import MyCV from "@/files/WebDev_RESUME_Ojeda.pdf";
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);

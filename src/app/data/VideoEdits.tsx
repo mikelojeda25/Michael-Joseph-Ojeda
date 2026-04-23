@@ -10,14 +10,36 @@ export interface VideoEdit {
 
 export const VideoEdits: VideoEdit[] = [
   {
+    id: "vid-145",
+    title: "Juice Jacking",
+    description:
+      "A short-form cybersecurity explainer. Created using Meta AI for B-roll visuals, Gemini for images, Hailuo AI, DreamFace for lip-sync, and CapCut for final assembly.",
+    videoUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776897207/Juice-Jacking_ogxx5d.mp4",
+    thumbnailUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776897207/Juice-Jacking_ogxx5d.jpg",
+    category: "Tech Explainer",
+  },
+  {
+    id: "vid-174",
+    title: "Windows 11 Installation",
+    description:
+      "A short-form tutorial on how to install Windows 11. Produced with Meta AI for B-roll, Gemini for visuals, Hailuo AI, DreamFace, and CapCut.",
+    videoUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776897228/W11-Installation_rmb8ai.mp4",
+    thumbnailUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776897228/W11-Installation_rmb8ai.jpg",
+    category: "Tutorial",
+  },
+  {
     id: "vid-189",
     title: "Nature Go",
     description:
       "Spec ad for NatureGo, produced using Meta AI for footage, ElevenLabs for emotive narration, and CapCut for final post-production.",
     videoUrl:
-      "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1776396137/NG_ispv1u.mp4",
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776519010/Nature-Go_ygheui.mp4",
     thumbnailUrl:
-      "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1776396137/NG_ispv1u.jpg",
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776519010/Nature-Go_ygheui.jpg",
     category: "Spec Ad / Reels",
   },
   {
