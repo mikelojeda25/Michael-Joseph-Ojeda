@@ -10,6 +10,28 @@ export interface VideoEdit {
 
 export const VideoEdits: VideoEdit[] = [
   {
+    id: "vid-146",
+    title: "Evil Twin Attack",
+    description:
+      "A short-form cybersecurity explainer. Created using Meta AI for B-roll visuals, Gemini for images, Hailuo AI, DreamFace for lip-sync, and CapCut for final assembly.",
+    videoUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776932666/Evil-Twin-Attack_afxqdy.mp4",
+    thumbnailUrl:
+      "https://res.cloudinary.com/dd5gbzoti/image/upload/v1776933640/Evil-Twin-Attack_afxqdy_poster.jpg",
+    category: "Tech Explainer",
+  },
+  {
+    id: "vid-134",
+    title: "Scent Note",
+    description:
+      "Created using Meta AI for B-roll visuals, Gemini for images, Hailuo AI, DreamFace for lip-sync, and CapCut.",
+    videoUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776932698/Scent-Note_x8t00b.mp4",
+    thumbnailUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776932698/Scent-Note_x8t00b.jpg",
+    category: "Quiz Funnel",
+  },
+  {
     id: "vid-145",
     title: "Juice Jacking",
     description:
@@ -40,7 +62,7 @@ export const VideoEdits: VideoEdit[] = [
       "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776519010/Nature-Go_ygheui.mp4",
     thumbnailUrl:
       "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776519010/Nature-Go_ygheui.jpg",
-    category: "Spec Ad / Reels",
+    category: "Spec Ad",
   },
   {
     id: "vid-248",
@@ -50,7 +72,7 @@ export const VideoEdits: VideoEdit[] = [
       "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1775972883/Rhodiola_Rosea_k50iif.mp4",
     thumbnailUrl:
       "https://res.cloudinary.com/dd5gbzoti/video/upload/q_auto/f_auto/v1775972883/Rhodiola_Rosea_k50iif.jpg",
-    category: "Shorts / Reels",
+    category: "Problem/Solution UGC",
   },
   {
     id: "vid-371",
