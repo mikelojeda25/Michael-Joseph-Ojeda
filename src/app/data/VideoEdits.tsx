@@ -24,7 +24,7 @@ export const VideoEdits: VideoEdit[] = [
     id: "vid-174",
     title: "Windows 11 Installation",
     description:
-      "A short-form tutorial on how to install Windows 11. Produced with Meta AI for B-roll, Gemini for visuals, Hailuo AI, DreamFace, and CapCut.",
+      "A short-form on how to install Windows 11. Produced with Meta AI for B-roll, Gemini for visuals, Hailuo AI, DreamFace, and CapCut.",
     videoUrl:
       "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776897228/W11-Installation_rmb8ai.mp4",
     thumbnailUrl:
