@@ -21,7 +21,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Tech Explainer",
   },
   {
-    id: "vid-134",
+    id: "vid-1340",
     title: "Scent Note",
     description:
       "Created using Meta AI for B-roll visuals, Gemini for images, Hailuo AI, DreamFace for lip-sync, and CapCut.",
@@ -97,7 +97,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Animation",
   },
   {
-    id: "vid-1",
+    id: "vid-111",
     title: "Ground Zero",
     description:
       "Official video edit for the Ground Zero animation trailer, produced using Capcut, ibisPaint, and Photoshop.",
@@ -108,7 +108,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Animation",
   },
   {
-    id: "vid-2",
+    id: "vid-224",
     title: "I'm Mine Alone - Mobile Version",
     description:
       "Visualizer for 'I'm Mine Alone' utilizing Capcut, Suno AI, and Gemini-generated artwork.",
@@ -119,7 +119,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Lyric Video",
   },
   {
-    id: "vid-3",
+    id: "vid-303",
     title: "Alapaap",
     description:
       "Alapaap Lyric Video / Edit using Capcut, Suno AI for music, and Gemini for the background",
@@ -130,7 +130,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Lyric Video",
   },
   {
-    id: "vid-4",
+    id: "vid-674",
     title: "Hollow World",
     description:
       "Showcasing my hand-drawn artwork (created with ibisPaint), and Capcut/Gemini for the background effects.",
@@ -141,7 +141,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Lyric Video",
   },
   {
-    id: "vid-5",
+    id: "vid-655",
     title: "Hollow World - Mobile Version",
     description: "Portrait view content for Hollow World",
     videoUrl:
