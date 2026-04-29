@@ -10,7 +10,7 @@ export interface VideoEdit {
 
 export const VideoEdits: VideoEdit[] = [
   {
-    id: "vid-1326",
+    id: "vid-16",
     title: "Evil Twin Attack",
     description:
       "A short-form cybersecurity explainer. Created using Meta AI for B-roll visuals, Gemini for images, Hailuo AI, DreamFace for lip-sync, and CapCut for final assembly.",
