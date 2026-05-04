@@ -10,7 +10,17 @@ export interface VideoEdit {
 
 export const VideoEdits: VideoEdit[] = [
   {
-    id: "vid-16",
+    id: "vid-7535",
+    title: "Credential Stuffing",
+    description: "A short-form cybersecurity explainer. Created using Meta AI for B-roll visuals, Gemini for images, Hailuo AI, DreamFace for lip-sync, and CapCut for final assembly.",
+    videoUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1777900554/0504_bmkptu.mp4",
+    thumbnailUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1777900554/0504_bmkptu.jpg",
+    category: "Tech Explainer",
+  },
+  {
+    id: "vid-1605",
     title: "Evil Twin Attack",
     description:
       "A short-form cybersecurity explainer. Created using Meta AI for B-roll visuals, Gemini for images, Hailuo AI, DreamFace for lip-sync, and CapCut for final assembly.",
@@ -18,6 +28,17 @@ export const VideoEdits: VideoEdit[] = [
       "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776932666/Evil-Twin-Attack_afxqdy.mp4",
     thumbnailUrl:
       "https://res.cloudinary.com/dd5gbzoti/image/upload/v1776933640/Evil-Twin-Attack_afxqdy_poster.jpg",
+    category: "Tech Explainer",
+  },
+  {
+    id: "vid-1475",
+    title: "Juice Jacking",
+    description:
+      "A short-form cybersecurity explainer. Created using Meta AI for B-roll visuals, Gemini for images, Hailuo AI, DreamFace for lip-sync, and CapCut for final assembly.",
+    videoUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776897207/Juice-Jacking_ogxx5d.mp4",
+    thumbnailUrl:
+      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776897207/Juice-Jacking_ogxx5d.jpg",
     category: "Tech Explainer",
   },
   {
@@ -32,18 +53,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Quiz Funnel",
   },
   {
-    id: "vid-145",
-    title: "Juice Jacking",
-    description:
-      "A short-form cybersecurity explainer. Created using Meta AI for B-roll visuals, Gemini for images, Hailuo AI, DreamFace for lip-sync, and CapCut for final assembly.",
-    videoUrl:
-      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776897207/Juice-Jacking_ogxx5d.mp4",
-    thumbnailUrl:
-      "https://res.cloudinary.com/dd5gbzoti/video/upload/v1776897207/Juice-Jacking_ogxx5d.jpg",
-    category: "Tech Explainer",
-  },
-  {
-    id: "vid-174",
+    id: "vid-1746",
     title: "Windows 11 Installation",
     description:
       "A short-form on how to install Windows 11. Produced with Meta AI for B-roll, Gemini for visuals, Hailuo AI, DreamFace, and CapCut.",
@@ -54,7 +64,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Tutorial",
   },
   {
-    id: "vid-189",
+    id: "vid-1891",
     title: "Nature Go",
     description:
       "Spec ad for NatureGo, produced using Meta AI for footage, ElevenLabs for emotive narration, and CapCut for final post-production.",
@@ -65,7 +75,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Spec Ad",
   },
   {
-    id: "vid-248",
+    id: "vid-2481",
     title: "Rhodiola Rosea",
     description: "A video edit created with Capcut.",
     videoUrl:
@@ -75,7 +85,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Problem/Solution UGC",
   },
   {
-    id: "vid-371",
+    id: "vid-3712",
     title: "Sunflower",
     description:
       "An animation created with Meta AI, Gemini, ChatGPT, and assembled through Capcut.",
@@ -86,7 +96,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Animation",
   },
   {
-    id: "vid-965",
+    id: "vid-9635",
     title: "Help In Need",
     description:
       "A video edit created with Magic Light AI, Luma AI, Gemini, Capcut, and Voicebooking.",
@@ -97,7 +107,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Animation",
   },
   {
-    id: "vid-111",
+    id: "vid-1115",
     title: "Ground Zero",
     description:
       "Official video edit for the Ground Zero animation trailer, produced using Capcut, ibisPaint, and Photoshop.",
@@ -108,7 +118,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Animation",
   },
   {
-    id: "vid-224",
+    id: "vid-2243",
     title: "I'm Mine Alone - Mobile Version",
     description:
       "Visualizer for 'I'm Mine Alone' utilizing Capcut, Suno AI, and Gemini-generated artwork.",
@@ -119,7 +129,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Lyric Video",
   },
   {
-    id: "vid-303",
+    id: "vid-3023",
     title: "Alapaap",
     description:
       "Alapaap Lyric Video / Edit using Capcut, Suno AI for music, and Gemini for the background",
@@ -130,7 +140,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Lyric Video",
   },
   {
-    id: "vid-674",
+    id: "vid-6714",
     title: "Hollow World",
     description:
       "Showcasing my hand-drawn artwork (created with ibisPaint), and Capcut/Gemini for the background effects.",
@@ -141,7 +151,7 @@ export const VideoEdits: VideoEdit[] = [
     category: "Lyric Video",
   },
   {
-    id: "vid-655",
+    id: "vid-6535",
     title: "Hollow World - Mobile Version",
     description: "Portrait view content for Hollow World",
     videoUrl:
