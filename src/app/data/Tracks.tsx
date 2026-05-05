@@ -28,6 +28,7 @@ import { silenceRemembersMeLyrics } from "./Lyrics/silence-remembers-me";
 import { powerTrippingLyrics } from "./Lyrics/power-tripping";
 
 import { alapaapLyrics } from "./Lyrics/alapaap";
+import { TerminalLyrics } from "./Lyrics/terminal";
 import { kinalimutangKahaponLyrics } from "./Lyrics/kinalimutang-kahapon";
 import { kontentoLyrics } from "./Lyrics/kontento";
 
@@ -369,6 +370,16 @@ export const Albums: Album[] = [
       },
       {
         id: "kspn-2",
+        title: "Terminal",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1777982884/Terminal_g6s1cv.mp3",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
+        lyrics: TerminalLyrics,
+      },
+      {
+        id: "kspn-3",
         title: "Kinalimutang Kahapon",
         artist: "Yozef",
         audioUrl:
@@ -378,7 +389,7 @@ export const Albums: Album[] = [
         lyrics: kinalimutangKahaponLyrics,
       },
       {
-        id: "kspn-3",
+        id: "kspn-4",
         title: "Kontento",
         artist: "Yozef",
         audioUrl:
