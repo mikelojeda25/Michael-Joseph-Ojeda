@@ -119,7 +119,7 @@ export const MusicInfo = ({
                 <div className="h-[1px] w-12 bg-white/20 mt-6" />
               </div>
 
-              <div className="overflow-y-auto pr-4 custom-scrollbar min-h-0 xl:max-h-[calc(100vh-240px)] mb-40">
+              <div className="overflow-y-auto pr-4 custom-scrollbar min-h-0 xl:max-h-[calc(100vh-240px)] pb-40">
                 <p className="text-md font-light text-gray-300 leading-relaxed whitespace-pre-line italic">
                   {currentTrack.lyrics}
                 </p>
