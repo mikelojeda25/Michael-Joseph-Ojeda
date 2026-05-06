@@ -28,6 +28,7 @@ import { silenceRemembersMeLyrics } from "./Lyrics/silence-remembers-me";
 import { powerTrippingLyrics } from "./Lyrics/power-tripping";
 
 import { alapaapLyrics } from "./Lyrics/alapaap";
+import { pabiliLyrics } from "./Lyrics/pabili";
 import { TerminalLyrics } from "./Lyrics/terminal";
 import { kinalimutangKahaponLyrics } from "./Lyrics/kinalimutang-kahapon";
 import { kontentoLyrics } from "./Lyrics/kontento";
@@ -368,6 +369,17 @@ export const Albums: Album[] = [
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
         lyrics: alapaapLyrics,
       },
+      {
+        id: "kspn-11",
+        title: "Pabili",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1778078073/Pabili_gmokq1.mp3",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
+        lyrics: pabiliLyrics,
+      },
+      
       {
         id: "kspn-2",
         title: "Terminal",
