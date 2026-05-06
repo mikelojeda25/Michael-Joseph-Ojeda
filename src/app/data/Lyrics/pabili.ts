@@ -16,7 +16,7 @@ Ako lang pala ang nasaktan nang husto
 Hay naku, sugat ay sadyang ikaw
 
 Verse 2
-Nasa iisang sitio lang tayo
+Nasa iisang sitio lang tayo hmm
 Iwasan mang tayo’y magtagpo
 Bumabalik ang panghihinayang ko
 Aking napagtanto
@@ -25,17 +25,19 @@ Sa iba ka naman umuuwi
 Refrain
 Binayaran ko naman nang buo, Manong Darfred
 Nagmahal na nga ang bilihin
-Bakit walang sukli
+Bakit wala akong sukli
 
 Binayaran ko naman nang buo, Manong Darfred
-Minahal ko nga, iba ang pinili
+Mahal ko nga s'ya, iba ang pinili
 Bakit ako lang pala ang umibig
 
 Bridge
+Binibini
 Baka pwedeng sa’kin ika’y tumingin
 Pero kahit sa’kin tumitig
 Dama ko lang ang ’yong lamig
-Wala na nga pala ako sa’yo
+Wala na nga pala ako sa’yo 
+Oh
 
 Chorus
 Hay naku, hay naku
