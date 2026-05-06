@@ -36,8 +36,7 @@ Binibini
 Baka pwedeng sa’kin ika’y tumingin
 Pero kahit sa’kin tumitig
 Dama ko lang ang ’yong lamig
-Wala na nga pala ako sa’yo 
-Oh
+Wala na nga pala ako sa’yo Oh
 
 Chorus
 Hay naku, hay naku
