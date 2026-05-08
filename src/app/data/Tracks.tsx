@@ -374,7 +374,7 @@ export const Albums: Album[] = [
         title: "Pabili",
         artist: "Yozef",
         audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1778197361/Pabili_r7xd6s.wav",
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1778201167/Pabili_cgtyke.wav",
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
         lyrics: pabiliLyrics,
