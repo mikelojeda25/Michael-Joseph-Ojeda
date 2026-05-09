@@ -363,6 +363,26 @@ export const Albums: Album[] = [
       "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
     tracks: [
       {
+        id: "kspn-33",
+        title: "Kumakatok",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1778303644/Kumatok_Tok-Tok_lp19ni.mp3",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
+        lyrics: kumakatokLyrics,
+      },
+      {
+        id: "kspn-4",
+        title: "Kontento",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774340611/Kontento_bikx59.wav",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
+        lyrics: kontentoLyrics,
+      },
+      {
         id: "kspn-1",
         title: "Alapaap",
         artist: "Yozef",
@@ -383,16 +403,6 @@ export const Albums: Album[] = [
         lyrics: pabiliLyrics,
       },  
       {
-        id: "kspn-2",
-        title: "Terminal",
-        artist: "Yozef",
-        audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1778305254/Terminal_gf9fya.wav",
-        coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
-        lyrics: TerminalLyrics,
-      },
-      {
         id: "kspn-3",
         title: "Kinalimutang Kahapon",
         artist: "Yozef",
@@ -403,24 +413,14 @@ export const Albums: Album[] = [
         lyrics: kinalimutangKahaponLyrics,
       },
       {
-        id: "kspn-33",
-        title: "Kumakatok",
+        id: "kspn-2",
+        title: "Terminal",
         artist: "Yozef",
         audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1778303644/Kumatok_Tok-Tok_lp19ni.mp3",
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1778305254/Terminal_gf9fya.wav",
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
-        lyrics: kumakatokLyrics,
-      },
-      {
-        id: "kspn-4",
-        title: "Kontento",
-        artist: "Yozef",
-        audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1774340611/Kontento_bikx59.wav",
-        coverUrl:
-          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
-        lyrics: kontentoLyrics,
+        lyrics: TerminalLyrics,
       },
     ],
   },
