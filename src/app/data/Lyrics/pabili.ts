@@ -29,14 +29,15 @@ Nagmahal na nga ang bilihin
 Bakit walang sukli
 Oh
 Binayaran ko naman nang buo, ba’t may sabit
-Minahal ko nga, iba ang pinili
+Mahal ko nga sya, iba ang pinili
 Bakit ako lang pala ang umibig
 
 Bridge
+Binibini
 Baka pwedeng sa’kin ika’y tumingin
 Pero kahit sa’kin tumitig
 Dama ko lang ang iyong lamig
-Wala na nga pala ako sa’yo
+Wala na nga pala ako sa’yo Oh
 
 Chorus
 Hay naku… hay naku

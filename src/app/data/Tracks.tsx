@@ -387,7 +387,7 @@ export const Albums: Album[] = [
         title: "Terminal",
         artist: "Yozef",
         audioUrl:
-          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1777982884/Terminal_g6s1cv.mp3",
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1778305254/Terminal_gf9fya.wav",
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
         lyrics: TerminalLyrics,
