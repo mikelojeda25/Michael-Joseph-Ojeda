@@ -1,49 +1,49 @@
 export const pabiliLyrics = `Verse 1
-Napabili lang ako kay Manong Darfred
+Napa bili lang ako kay Manong Darfred
 Nakasalubong pa nga kita
 Oo, matagal na tayong wala
-Pero tibok pa rin, sa’yo nakatalaga
+Pero tibok pa rin sa’yo nakatalaga
 
 Pre-Chorus
-Pabili, pabili ng pag-ibig
+Pabili… pabili ng pag-ibig
 Binayaran ko naman nang buo
 Nakalimutan mo ba ang sukli
 
 Chorus
-Hay naku, hay naku
+Hay naku… hay naku
 Tinamaan nga naman ng balang ligaw
 Ako lang pala ang nasaktan nang husto
-Hay naku, sugat ay sadyang ikaw
+Hay naku… sugat ay sadyang ikaw
 
 Verse 2
-Nasa iisang sitio lang tayo hmm
+Nasa iisang sitio lang tayo
 Iwasan mang tayo’y magtagpo
 Bumabalik ang panghihinayang ko
 Aking napagtanto
-Sa iba ka naman umuuwi
+Sa iba ka naman nauwi
 
-Refrain
+Pre-Bridge
+Oh
 Binayaran ko naman nang buo, Manong Darfred
 Nagmahal na nga ang bilihin
-Bakit wala akong sukli
-
-Binayaran ko naman nang buo, Manong Darfred
-Mahal ko nga s'ya, iba ang pinili
+Bakit walang sukli
+Oh
+Binayaran ko naman nang buo, ba’t may sabit
+Minahal ko nga, iba ang pinili
 Bakit ako lang pala ang umibig
 
 Bridge
-Binibini
 Baka pwedeng sa’kin ika’y tumingin
 Pero kahit sa’kin tumitig
-Dama ko lang ang ’yong lamig
-Wala na nga pala ako sa’yo Oh
+Dama ko lang ang iyong lamig
+Wala na nga pala ako sa’yo
 
 Chorus
-Hay naku, hay naku
+Hay naku… hay naku
 Tinamaan nga naman ng balang ligaw
 Di mapigilan ang sakit nitong puso
-Hay naku, sugat ay sadyang ikaw
+Hay naku… sugat ay sadyang ikaw
 
 Outro
 Di mapigilan ang sakit nitong puso
-Hay naku, bakit nga ba kasi ikaw`;
+Hay naku… bakit nga ba kasi ikaw`;

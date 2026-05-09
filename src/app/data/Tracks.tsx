@@ -32,6 +32,9 @@ import { pabiliLyrics } from "./Lyrics/pabili";
 import { TerminalLyrics } from "./Lyrics/terminal";
 import { kinalimutangKahaponLyrics } from "./Lyrics/kinalimutang-kahapon";
 import { kontentoLyrics } from "./Lyrics/kontento";
+import { kumakatokLyrics } from "./Lyrics/kumakatok";
+
+
 
 import { allIveGotLyrics } from "./Lyrics/all-ive-got";
 import { savingYourSeatLyrics } from "./Lyrics/saving-your-seat";
@@ -378,8 +381,7 @@ export const Albums: Album[] = [
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
         lyrics: pabiliLyrics,
-      },
-      
+      },  
       {
         id: "kspn-2",
         title: "Terminal",
@@ -399,6 +401,16 @@ export const Albums: Album[] = [
         coverUrl:
           "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
         lyrics: kinalimutangKahaponLyrics,
+      },
+      {
+        id: "kspn-33",
+        title: "Kumakatok",
+        artist: "Yozef",
+        audioUrl:
+          "https://res.cloudinary.com/dd5gbzoti/video/upload/v1778303644/Kumatok_Tok-Tok_lp19ni.mp3",
+        coverUrl:
+          "https://res.cloudinary.com/dd5gbzoti/image/upload/v1773830012/Untitled252_20260318182313_1_llt1ie.png",
+        lyrics: kumakatokLyrics,
       },
       {
         id: "kspn-4",

@@ -8,7 +8,7 @@ Pre-Chorus
 Babalik o uusad
 Kung may madadatnan pa
 Maghihintay o gagalaw
-Ikaw pa rin talaga
+Ikaw nga ba talaga
 
 Chorus 1
 Andito pa rin ako sa terminal
@@ -39,7 +39,7 @@ Ikaw’y pupuntahan
 Kulang man ang pamasahe
 
 Bridge
-Ohhh... 
+Ohhh...
 Wagas man ang pagnanasang makasama ka
 Kung pilit ka nang bumibitaw
 Para saan pa ang ating paglalakbay
@@ -50,7 +50,7 @@ Andito pa rin ako sa terminal
 Lalayo sa nakaraan
 Iiwan ang pangako
 Ihahatid ka
-Ako’y sasakay sa eroplano
+Bago sumakay sa eroplano
 Palayo sa kahapon
 
 Outro
